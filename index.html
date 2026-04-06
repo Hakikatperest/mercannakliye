@@ -1,404 +1,1759 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
-<meta name="description" content="U7 Studio Fashion - 2026 Koleksiyon: Modern elbise tasarımları, trendleri yakından takip eden özel koleksiyon. 2026 moda elbiseler ve stil ipuçları.">
-<title>U7 Studio Fashion | 2026 Koleksiyon - Modern Elbiseler & Trendler</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercan Nakliye | Türkiye Geneli Evden Eve Nakliyat Hizmetleri</title>
+    <meta name="description" content="Mercan Nakliye ile güvenli, ekonomik ve profesyonel şehirler arası nakliyat hizmeti. Nakliyat fiyatları, en yakın nakliyeci, evden eve nakliyat çözümleri." />
+    <meta name="keywords" content="şehirler arası nakliyat, nakliyat fiyatları, en yakın nakliyeci, evden eve nakliyat, nakliye firmaları, nakliyatçı numarası, Mercan Nakliye" />
+    <meta name="robots" content="index, follow" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚚</text></svg>">
+    <style>
+        :root {
+            --primary: #1a56db;
+            --primary-dark: #1e429f;
+            --secondary: #10b981;
+            --accent: #f59e0b;
+            --dark: #1f2937;
+            --gray-dark: #4b5563;
+            --gray: #9ca3af;
+            --gray-light: #f3f4f6;
+            --light: #f9fafb;
+            --white: #ffffff;
+            --shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 20px 60px rgba(0, 0, 0, 0.12);
+            --radius: 16px;
+            --radius-sm: 12px;
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
 
-  :root {
-    --white: #ffffff;
-    --off-white: #fafafa;
-    --light-gray: #f4f4f4;
-    --mid-gray: #e0e0e0;
-    --text-dark: #111111;
-    --text-mid: #555555;
-    --text-light: #999999;
-    --accent: #1a1a1a;
-    --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  html { scroll-behavior: smooth; overflow-x: hidden; width: 100%; }
-  body {
-    font-family: 'Montserrat', sans-serif;
-    background: var(--white);
-    color: var(--text-dark);
-    overflow-x: hidden;
-    width: 100%;
-  }
+        html {
+            scroll-behavior: smooth;
+        }
 
-  /* HEADER */
-  header {
-    background: var(--white);
-    border-bottom: 1px solid var(--mid-gray);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    transition: box-shadow var(--transition);
-    width: 100%;
-  }
-  header.shrunk { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
-  .lang-bar {
-    background: var(--white);
-    border-bottom: 1px solid var(--mid-gray);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 6px 40px;
-    gap: 4px;
-    transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
-    max-height: 40px;
-    overflow: hidden;
-    flex-wrap: wrap;
-  }
-  header.shrunk .lang-bar { max-height: 0; opacity: 0; padding: 0; }
-  .lang-btn {
-    background: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    padding: 4px 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
-    font-weight: 500;
-    cursor: pointer;
-    color: var(--text-mid);
-    transition: all 0.2s;
-  }
-  .lang-btn:hover, .lang-btn.active { border-color: var(--accent); color: var(--accent); background: var(--light-gray); }
-  .header-inner {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 14px 40px;
-    transition: padding var(--transition);
-    width: 100%;
-  }
-  header.shrunk .header-inner { padding: 8px 40px; }
-  .logo img { height: 48px; object-fit: contain; transition: height var(--transition); display: block; max-width: 100%; }
-  header.shrunk .logo img { height: 34px; }
-  nav { display: flex; align-items: center; gap: 36px; }
-  nav a {
-    text-decoration: none;
-    color: var(--text-dark);
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    position: relative;
-    padding-bottom: 4px;
-  }
-  nav a::after {
-    content: '';
-    position: absolute;
-    bottom: 0; left: 0;
-    width: 0; height: 1px;
-    background: var(--accent);
-    transition: width 0.3s ease;
-  }
-  nav a:hover::after, nav a.active::after { width: 100%; }
-  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; }
-  .hamburger span { display: block; width: 24px; height: 1.5px; background: var(--accent); transition: all 0.3s; }
-  .hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
-  .hamburger.open span:nth-child(2) { opacity: 0; }
-  .hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
-  .mobile-nav { display: none; flex-direction: column; background: var(--white); border-top: 1px solid var(--mid-gray); padding: 20px 40px; gap: 20px; }
-  .mobile-nav.open { display: flex; }
-  .mobile-nav a { text-decoration: none; color: var(--text-dark); font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
 
-  /* COLLECTION HERO */
-  .collection-hero { text-align: center; padding: 70px 40px 40px; background: var(--white); }
-  .collection-hero .eyebrow { font-size: 10px; font-weight: 600; letter-spacing: 0.3em; text-transform: uppercase; color: var(--text-light); margin-bottom: 14px; }
-  .collection-hero h1 { font-size: clamp(28px, 5vw, 52px); font-weight: 300; letter-spacing: 0.15em; text-transform: uppercase; line-height: 1.2; }
-  .collection-hero h1 strong { font-weight: 700; display: block; }
-  .collection-hero .divider { width: 40px; height: 1px; background: var(--accent); margin: 24px auto 0; }
+        /* HAMBURGER MENÜ CSS */
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            height: 70px;
+        }
 
-  /* PRODUCT GRID */
-  .grid-section { padding: 40px 40px 80px; max-width: 1400px; margin: 0 auto; width: 100%; }
-  .product-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-  .product-item {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    background: var(--light-gray);
-    aspect-ratio: 3/4;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-  }
-  .product-item.visible { opacity: 1; transform: translateY(0); }
-  .product-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.7s var(--transition), opacity 0.3s; }
-  .product-item:hover img { transform: scale(1.06); opacity: 0.92; }
+        .logo a {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: #1a56db;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
 
-  /* LIGHTBOX */
-  .lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.88); z-index: 9999; align-items: center; justify-content: center; padding: 20px; }
-  .lightbox.open { display: flex; }
-  .lightbox-inner { position: relative; max-width: 720px; width: 100%; max-height: 92vh; }
-  .lightbox-inner img { width: 100%; max-height: 85vh; object-fit: contain; border-radius: 2px; }
-  .lightbox-close { position: absolute; top: -40px; right: 0; background: none; border: none; color: white; font-size: 28px; cursor: pointer; }
-  .lightbox-cta { position: absolute; bottom: 20px; left: 20px; display: flex; flex-direction: column; gap: 10px; }
-  .lightbox-cta a { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 3px; font-size: 12px; font-weight: 600; text-decoration: none; text-transform: uppercase; transition: opacity 0.2s; cursor: pointer; }
-  .btn-whatsapp { background: #25D366; color: white; }
-  .btn-call { background: white; color: #111; }
-  .section-label { max-width: 1400px; margin: 0 auto; padding: 0 40px 28px; display: flex; align-items: center; gap: 18px; width: 100%; }
-  .section-label span { font-size: 10px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: var(--text-light); white-space: nowrap; }
-  .section-label::after { content: ''; flex: 1; height: 1px; background: var(--mid-gray); }
+        .logo a i {
+            color: #000;
+            font-size: 1.8rem;
+        }
 
-  /* VERTICAL VIDEO + ARTICLES */
-  .vertical-video-articles {
-    max-width: 1100px;
-    margin: 0 auto 60px;
-    padding: 0 24px;
-    width: 100%;
-  }
-  .video-article-block {
-    margin-bottom: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 28px;
-  }
-  .video-block {
-    width: 100%;
-    max-width: 780px;
-    background: #000;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 20px 30px -12px rgba(0,0,0,0.2);
-  }
-  .video-block video {
-    width: 100%;
-    height: auto;
-    max-height: 580px;
-    object-fit: cover;
-    display: block;
-  }
-  .seo-article {
-    background: #fefefe;
-    border-left: 4px solid #1a1a1a;
-    padding: 24px 28px;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.03);
-    max-width: 780px;
-    width: 100%;
-  }
-  .seo-article h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 12px;
-    letter-spacing: -0.2px;
-    color: #111;
-  }
-  .seo-article p {
-    color: #2d2d2d;
-    line-height: 1.6;
-    font-size: 0.95rem;
-    margin-bottom: 0;
-  }
+        /* Hamburger Menü Butonu */
+        .menu-toggle {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            z-index: 1001;
+        }
 
-  /* CONTACT SECTION */
-  #iletisim { padding: 80px 40px; max-width: 1400px; margin: 0 auto; width: 100%; }
-  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
-  .contact-info h2 { font-size: 11px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: var(--text-light); margin-bottom: 30px; }
-  .contact-detail { margin-bottom: 22px; }
-  .contact-detail .label { font-size: 10px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-light); margin-bottom: 6px; }
-  .contact-detail p, .contact-detail a { font-size: 14px; font-weight: 400; color: var(--text-dark); text-decoration: none; line-height: 1.6; display: block; }
-  .social-row { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
-  .social-link { display: inline-flex; align-items: center; gap: 7px; padding: 9px 16px; border: 1px solid var(--mid-gray); font-size: 11px; font-weight: 600; text-transform: uppercase; text-decoration: none; color: var(--text-dark); border-radius: 2px; transition: all 0.2s; }
-  .social-link:hover { background: var(--accent); color: white; border-color: var(--accent); }
-  .map-container iframe { width: 100%; height: 380px; display: block; border: 0; border-radius: 2px; }
+        .menu-toggle span {
+            width: 100%;
+            height: 3px;
+            background-color: var(--primary);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
 
-  /* FOOTER - BEYAZ ARKA PLAN, SİYAH YAZILAR, LOGO DÜZELTİLDİ (FİLTER KALDIRILDI) */
-  footer {
-    background: #ffffff;
-    border-top: 1px solid #e2e2e2;
-    padding: 40px 40px;
-    width: 100%;
-  }
-  .footer-inner {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    width: 100%;
-  }
-  .footer-logo {
-    display: flex;
-    align-items: center;
-  }
-  .footer-logo img {
-    height: 42px;
-    width: auto;
-    object-fit: contain;
-    /* FİLTER KALDIRILDI - logo orijinal renkleriyle görünecek */
-    opacity: 0.9;
-    transition: opacity 0.2s;
-  }
-  .footer-links { display: flex; gap: 28px; flex-wrap: wrap; }
-  .footer-links a { color: #1f1f1f; text-decoration: none; font-size: 10px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; transition: color 0.2s; }
-  .footer-links a:hover { color: #555; }
-  .footer-copy { font-size: 10px; letter-spacing: 0.05em; color: #2c2c2c; }
+        .menu-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
 
-  /* FLOATING BUTTONS: HEMEN ARA + WHATSAPP */
-  .floating-buttons {
-    position: fixed;
-    bottom: 1.5rem;
-    right: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-    z-index: 1000;
-  }
-  .float-btn {
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transition: transform 0.2s ease, box-shadow 0.2s;
-    cursor: pointer;
-    border: none;
-    font-size: 1.6rem;
-  }
-  .float-btn:hover { transform: scale(1.05); box-shadow: 0 6px 16px rgba(0,0,0,0.2); }
-  .call-now-btn {
-    background-color: #1a1a1a;
-    color: white;
-  }
-  .whatsapp-btn { background-color: #25D366; color: white; }
+        .menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
 
-  @media (max-width: 1100px) { .product-grid { grid-template-columns: repeat(3, 1fr); } }
-  @media (max-width: 768px) {
-    .lang-bar { padding: 6px 20px; justify-content: center; }
-    .header-inner { padding: 10px 20px; }
-    nav { display: none; }
-    .hamburger { display: flex; }
-    .collection-hero { padding: 48px 20px 28px; }
-    .grid-section { padding: 24px 20px 60px; }
-    .product-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
-    .vertical-video-articles { padding: 0 16px; }
-    .seo-article h3 { font-size: 1.25rem; }
-    .contact-grid { grid-template-columns: 1fr; gap: 40px; }
-    footer { padding: 30px 20px; }
-    .footer-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
-    .footer-logo img { height: 36px; }
-    .float-btn { width: 48px; height: 48px; font-size: 1.4rem; }
-  }
-  @media (max-width: 480px) { .product-grid { grid-template-columns: 1fr; } .product-item { aspect-ratio: 4/5; } }
-</style>
+        .menu-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        /* Yandan Açılır Menü */
+        .sidebar-menu {
+            position: fixed;
+            top: 0;
+            right: -350px;
+            width: 320px;
+            height: 100%;
+            background: white;
+            box-shadow: -5px 0 30px rgba(0, 0, 0, 0.15);
+            z-index: 1002;
+            transition: right 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            overflow-y: auto;
+            border-left: 1px solid #eee;
+        }
+
+        .sidebar-menu.active {
+            right: 0;
+        }
+
+        .sidebar-header {
+            padding: 20px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            background: white;
+            height: 70px;
+        }
+
+        .sidebar-header .logo {
+            display: none;
+        }
+
+        .sidebar-close {
+            background: transparent;
+            border: none;
+            color: var(--dark);
+            font-size: 1.5rem;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: background 0.3s ease;
+        }
+
+        .sidebar-close:hover {
+            background: rgba(0, 0, 0, 0.05);
+        }
+
+        .sidebar-links {
+            padding: 20px 0;
+        }
+
+        .sidebar-links a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            padding: 15px 25px;
+            color: var(--dark);
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+
+        .sidebar-links a:hover {
+            background: rgba(26, 86, 219, 0.05);
+            color: var(--primary);
+            border-left: 4px solid var(--primary);
+            padding-left: 30px;
+        }
+
+        .sidebar-links a.active {
+            background: rgba(26, 86, 219, 0.1);
+            color: var(--primary);
+            border-left: 4px solid var(--primary);
+        }
+
+        .sidebar-links a i {
+            width: 24px;
+            text-align: center;
+            color: var(--gray-dark);
+        }
+
+        .sidebar-links a:hover i,
+        .sidebar-links a.active i {
+            color: var(--primary);
+        }
+
+        /* Submenu Styles */
+        .submenu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            background: rgba(26, 86, 219, 0.03);
+        }
+
+        .submenu.active {
+            max-height: 200px;
+        }
+
+        .submenu a {
+            padding: 12px 25px 12px 50px !important;
+            font-size: 1rem !important;
+            border-left: 4px solid transparent !important;
+        }
+
+        .submenu a:hover {
+            background: rgba(26, 86, 219, 0.08) !important;
+        }
+
+        .submenu-icon {
+            font-size: 0.8rem !important;
+            transition: transform 0.3s ease;
+        }
+
+        .has-submenu.active .submenu-icon {
+            transform: rotate(180deg);
+        }
+
+        .sidebar-cta {
+            padding: 20px;
+            border-top: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            background: white;
+        }
+
+        .sidebar-btn {
+            padding: 14px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .sidebar-btn.whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+        }
+
+        .sidebar-btn.phone {
+            background: var(--primary);
+            color: white;
+            border: none;
+        }
+
+        .sidebar-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Overlay */
+        .sidebar-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1001;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .sidebar-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* HERO SECTION */
+        .nakliye-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/birlik-nakliye.webp');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 140px 20px 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            margin-top: 0;
+        }
+
+        .nakliye-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .nakliye-hero h1 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .nakliye-hero h1 span {
+            color: var(--secondary);
+            display: inline-block;
+        }
+
+        .nakliye-hero p {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.95);
+            max-width: 800px;
+            margin: 0 auto 40px;
+            font-weight: 300;
+        }
+
+        .hero-cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 18px 36px;
+            border-radius: var(--radius);
+            font-weight: 600;
+            font-size: 16px;
+            text-decoration: none;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            min-width: 220px;
+            box-shadow: var(--shadow);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, var(--secondary), #0d9c6f);
+            color: var(--white);
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .btn i {
+            font-size: 1.2rem;
+        }
+
+        /* ANA İÇERİK */
+        .main-content {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .content-container {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 50px;
+        }
+
+        @media (max-width: 992px) {
+            .content-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* SOL SÜTUN - İÇERİK */
+        .article-content {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 50px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--gray-light);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: var(--dark);
+            line-height: 1.3;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title i {
+            color: var(--primary);
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--gray);
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .content-section {
+            margin-bottom: 60px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--gray-light);
+        }
+
+        .content-section:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+
+        .content-section h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--primary);
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--gray-light);
+        }
+
+        .content-section h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 25px 0 15px;
+            color: var(--dark);
+        }
+
+        .content-section p {
+            margin-bottom: 20px;
+            color: var(--gray-dark);
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+
+        .content-section ul, .content-section ol {
+            margin-bottom: 25px;
+            padding-left: 25px;
+        }
+
+        .content-section li {
+            margin-bottom: 10px;
+            color: var(--gray-dark);
+            line-height: 1.6;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(26, 86, 219, 0.1), rgba(30, 66, 159, 0.05));
+            border-left: 4px solid var(--primary);
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 var(--radius) var(--radius) 0;
+        }
+
+        .highlight-box h4 {
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .feature-card {
+            background: var(--white);
+            border-radius: var(--radius-sm);
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--gray-light);
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .feature-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            color: var(--dark);
+        }
+
+        .city-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .city-card {
+            background: var(--white);
+            border-radius: var(--radius-sm);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--gray-light);
+            transition: var(--transition);
+        }
+
+        .city-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary);
+        }
+
+        .city-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        .city-card h4 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--dark);
+        }
+
+        .city-card p {
+            font-size: 0.9rem;
+            color: var(--gray);
+            margin-bottom: 0;
+        }
+
+        .section-cta {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .section-btn {
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95rem;
+        }
+
+        .section-btn.whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+        }
+
+        .section-btn.phone {
+            background: var(--primary);
+            color: white;
+        }
+
+        .section-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* SAĞ SÜTUN - SIDEBAR */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .sidebar-widget {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 30px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--gray-light);
+        }
+
+        .widget-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--dark);
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--gray-light);
+        }
+
+        .quick-contact {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .quick-contact .widget-title {
+            color: white;
+            border-bottom-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .contact-sidebar-btn {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            transition: var(--transition);
+            margin-bottom: 15px;
+        }
+
+        .contact-sidebar-btn.whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+        }
+
+        .contact-sidebar-btn.phone {
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+        }
+
+        .contact-sidebar-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .keyword-list {
+            list-style: none;
+        }
+
+        .keyword-list li {
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--gray-light);
+        }
+
+        .keyword-list li:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .keyword-list a {
+            color: var(--gray-dark);
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+        }
+
+        .keyword-list a:hover {
+            color: var(--primary);
+            transform: translateX(5px);
+        }
+
+        .keyword-list i {
+            color: var(--primary);
+            margin-right: 10px;
+            font-size: 0.9rem;
+        }
+
+        .faq-sidebar .faq-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--gray-light);
+        }
+
+        .faq-sidebar .faq-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .faq-sidebar .faq-question {
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 8px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-sidebar .faq-question i {
+            transition: transform 0.3s ease;
+            color: var(--primary);
+        }
+
+        .faq-sidebar .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-sidebar .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        .faq-sidebar .faq-item.active .faq-answer {
+            max-height: 300px;
+            margin-top: 10px;
+        }
+
+        /* CTA SECTION */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            padding: 100px 20px;
+            text-align: center;
+            color: white;
+            border-radius: var(--radius);
+            margin: 80px auto;
+            max-width: 1200px;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* OTOMATİK SOHBET BALONU */
+        .chat-bubble {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+
+        .chat-bubble.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .chat-content {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            border: 1px solid var(--gray-light);
+        }
+
+        .chat-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .chat-avatar {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .chat-text h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            color: var(--dark);
+        }
+
+        .chat-text p {
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+
+        .chat-call-btn {
+            display: block;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            text-align: center;
+            padding: 12px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 15px;
+            transition: var(--transition);
+        }
+
+        .chat-call-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(26, 86, 219, 0.3);
+        }
+
+        .chat-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.05);
+            border: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 0.8rem;
+            color: var(--gray);
+        }
+
+        /* FLOATING CTA */
+        .floating-cta {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .floating-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: var(--transition);
+            text-decoration: none;
+            font-size: 1.8rem;
+        }
+
+        .floating-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .floating-whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            animation: pulse 2s infinite;
+        }
+
+        .floating-phone {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--white);
+            color: var(--dark);
+            padding: 60px 20px 30px;
+            text-align: center;
+            border-top: 1px solid var(--gray-light);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-contact {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--gray-dark);
+        }
+
+        .contact-item i {
+            color: var(--primary);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 30px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .footer-links a {
+            color: var(--gray-dark);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .copyright {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--gray-light);
+            color: #dc2626;
+            font-size: 0.9rem;
+            width: 100%;
+            font-weight: 600;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .nakliye-hero {
+                padding: 100px 20px 80px;
+            }
+            
+            .nakliye-hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .nakliye-hero p {
+                font-size: 1.1rem;
+            }
+            
+            .btn {
+                min-width: 100%;
+                padding: 16px 24px;
+            }
+            
+            .hero-cta-buttons, .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .article-content {
+                padding: 30px 20px;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .floating-cta {
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .floating-btn {
+                width: 55px;
+                height: 55px;
+                font-size: 1.6rem;
+            }
+            
+            .sidebar-menu {
+                width: 280px;
+            }
+            
+            .chat-content {
+                width: 280px;
+                right: 10px;
+                bottom: 10px;
+            }
+            
+            .section-cta {
+                flex-direction: column;
+            }
+            
+            .city-cards {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nakliye-hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .city-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-
-<header id="mainHeader">
-  <div class="lang-bar">
-    <button class="lang-btn active" onclick="setLang('tr')"><span class="flag">🇹🇷</span> Türkçe</button>
-    <button class="lang-btn" onclick="setLang('en')"><span class="flag">🇬🇧</span> English</button>
-    <button class="lang-btn" onclick="setLang('ru')"><span class="flag">🇷🇺</span> Русский</button>
-    <button class="lang-btn" onclick="setLang('es')"><span class="flag">🇪🇸</span> Español</button>
-  </div>
-  <div class="header-inner">
-    <a href="#" class="logo"><img src="https://www.u7studiofashion.com/images/logo.webp" alt="U7 Studio Fashion Logo"></a>
-    <nav><a href="#kurumsal" class="nav-kurumsal">Kurumsal</a><a href="#koleksiyon" class="nav-koleksiyon active">Koleksiyon</a><a href="#iletisim" class="nav-iletisim">İletişim</a></nav>
-    <button class="hamburger" id="hamburger" aria-label="Menü" onclick="toggleMenu()"><span></span><span></span><span></span></button>
-  </div>
-</header>
-<div class="mobile-nav" id="mobileNav"><a href="#kurumsal" onclick="toggleMenu()">Kurumsal</a><a href="#koleksiyon" onclick="toggleMenu()">Koleksiyon</a><a href="#iletisim" onclick="toggleMenu()">İletişim</a></div>
-
-<section class="collection-hero" id="koleksiyon"><p class="collection-eyebrow eyebrow">U7 Studio Fashion</p><h1 class="collection-title"><strong>2026</strong> <span class="title-shop">U7 Shop</span></h1><div class="divider"></div></section>
-<div class="section-label"><span class="label-koleksiyon">Koleksiyon</span></div>
-<section class="grid-section" id="kurumsal"><div class="product-grid" id="productGrid"></div></section>
-
-<div class="lightbox" id="lightbox" onclick="closeLightboxOutside(event)"><div class="lightbox-inner"><button class="lightbox-close" onclick="closeLightbox()">✕</button><img id="lightboxImg" src="" alt="Ürün Detay"><div class="lightbox-cta"><a href="https://wa.me/905348118440" target="_blank" class="btn-whatsapp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span class="cta-order">WhatsApp Sipariş</span></a><a href="tel:02124380937" class="btn-call"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.27-.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><span class="cta-call">Hemen Ara</span></a></div></div></div>
-
-<!-- VERTICAL VIDEOS + SEO MAKALELER (ALT ALTA) -->
-<div class="vertical-video-articles">
-  <div class="video-article-block">
-    <div class="video-block"><video src="https://www.u7studiofashion.com/images/1.mp4" autoplay muted loop playsinline></video></div>
-    <div class="seo-article">
-      <h3>✨ 2026 Moda Trendleri: U7 Studio Farkı</h3>
-      <p>2026 yılı, minimalizm ve cesur dokuların buluştuğu bir dönem olarak moda dünyasında iz bırakıyor. U7 Studio Fashion, sürdürülebilir kumaşlar ve yenilikçi kesimlerle yeni sezon elbiselerinde sofistike çizgiler sunuyor. Sezonun öne çıkan parçaları arasında dökümlü ipek elbiseler, asimetrik etek boyları ve pastel tonlar ile toprak tonlarının uyumu yer alıyor. Modayı yakından takip edenler için U7 Studio koleksiyonu, her gardırobun vazgeçilmezi olacak.</p>
+    <!-- HAMBURGER MENÜ -->
+    <div class="top-bar">
+        <div class="logo">
+            <a href="/"><i class="fas fa-truck"></i> Mercan Nakliye</a>
+        </div>
+        <button class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
-  </div>
-  <div class="video-article-block">
-    <div class="video-block"><video src="https://www.u7studiofashion.com/images/2.mp4" autoplay muted loop playsinline></video></div>
-    <div class="seo-article">
-      <h3>👗 Geleceğin Elbise Siluetleri: U7 Studio 2026</h3>
-      <p>Gelecek yılın modasında özgürlük ve ifade ön planda. U7 Studio Fashion'in 2026 koleksiyonunda bol hacimli kollardan, vücudu saran kesimlere kadar geniş bir yelpaze bulunuyor. Özellikle gece elbiselerinde transparan detaylar, taş işlemeler ve modern drapeler dikkat çekiyor. Modayı yakından takip eden moda tutkunları, "2026 moda elbiseler" aramalarında U7 Studio'nin sofistike tasarımlarını keşfediyor. Siz de yeni sezonu önceden yakalayın.</p>
-    </div>
-  </div>
-  <div class="video-article-block">
-    <div class="video-block"><video src="https://www.u7studiofashion.com/images/3.mp4" autoplay muted loop playsinline></video></div>
-    <div class="seo-article">
-      <h3>💎 U7 Studio ile Zarafetin Yeniden Tanımı</h3>
-      <p>Moda dünyasında her mevsim yenilik arayanlar için U7 Studio Fashion, ilham veren bir durak. 2026 ilkbahar-yaz koleksiyonunda akıcı kumaşlar, doğal taş aksanları ve butik işçilik öne çıkıyor. Modayı yakından takip etmek isteyenler için backstage görüntüleri ve tasarım süreçleriyle ilham veriyoruz. "2026 moda elbiseler" arayanlar için U7 Studio, trendlerin ötesinde zamansız şıklık sunuyor. Stilini önemseyen herkes bu koleksiyona bayılacak.</p>
-    </div>
-  </div>
-  <div class="video-article-block">
-    <div class="video-block"><video src="https://www.u7studiofashion.com/images/4.mp4" autoplay muted loop playsinline></video></div>
-    <div class="seo-article">
-      <h3>📸 Red Carpet’tan Günlük Stile: U7 Studio Elbiseleri</h3>
-      <p>2026 moda öngörüleri, kıyafetlerde çok yönlülüğü işaret ediyor. U7 Studio Fashion, gündüz şıklığından akşam davetlerine uzanan elbiseleriyle her anınıza eşlik ediyor. Özellikle yenilikçi kesimler ve cesur renk paletleri, markayı modaseverlerin ilk sırasına taşıyor. Modayı yakından takip etmek isteyenler için U7 Studio, her koleksiyonunda sürprizler sunuyor. 2026'nın en gözde parçaları sizi bekliyor.</p>
-    </div>
-  </div>
-  <div class="video-article-block">
-    <div class="video-block"><video src="https://www.u7studiofashion.com/images/5.mp4" autoplay muted loop playsinline></video></div>
-    <div class="seo-article">
-      <h3>🌟 U7 Studio Fashion: 2026'nın En İlham Veren Trendleri</h3>
-      <p>Moda dinamiklerinin hızla değiştiği günümüzde U7 Studio Fashion, öncü ruhuyla dikkat çekiyor. Yeni sezon koleksiyonunda vintage dokunuşlar, futuristik aksesuarlar ve ekolojik kumaşlar harmanlanıyor. 2026 moda elbiseler arasında fark yaratmak isteyenler için özel tasarım modeller ve sınırlı sayıdaki parçalar büyük ilgi görüyor. Modayı yakından takip eden influencer'ların favorisi U7 Studio, stilinizi evrimleştirecek.</p>
-    </div>
-  </div>
-</div>
 
-<!-- İLETİŞİM -->
-<section id="iletisim"><div class="section-label" style="padding-left:0; padding-right:0;"><span class="label-iletisim">İletişim</span></div>
-<div class="contact-grid"><div class="contact-info"><h2 class="contact-title">Bize Ulaşın</h2>
-<div class="contact-detail"><p class="label adres-label">Adres</p><p class="adres-text">YENİDOĞAN MAH. KARAKAŞ SK. CEM İŞ MERKEZİ<br>NO: 1-3 İÇ KAPI NO:201<br>BAYRAMPAŞA / İSTANBUL</p></div>
-<div class="contact-detail"><p class="label tel-label">Telefon</p><a href="tel:02124380937" class="tel1">0212 438 09 37</a></div>
-<div class="contact-detail"><p class="label wp-label">WhatsApp</p><a href="https://wa.me/905348118440" target="_blank" class="wp-num">+90 (534) 811 84 40</a></div>
-<div class="social-row"><a href="https://www.instagram.com/u7.studiofashion" target="_blank" class="social-link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg><span class="ig-text">Instagram</span></a><a href="https://wa.me/905348118440" target="_blank" class="social-link"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span class="wp-text">WhatsApp</span></a></div></div>
-<div class="map-container"><iframe src="https://yandex.com.tr/map-widget/v1/org/cem_is_merkezi/26709226994/?ll=28.913203%2C41.046218&z=16" width="560" height="380" frameborder="0" allowfullscreen title="U7 Studio Fashion Konum" loading="lazy"></iframe></div></div></section>
+    <!-- Sidebar Menü -->
+    <div class="sidebar-menu" id="sidebarMenu">
+        <div class="sidebar-header">
+            <button class="sidebar-close" id="sidebarClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
 
-<!-- FOOTER BEYAZ, LOGO ARTIK SİYAH DEĞİL (ORİJİNAL RENGİNDE) -->
-<footer><div class="footer-inner"><div class="footer-logo"><img src="https://www.u7studiofashion.com/images/logo.webp" alt="U7 Studio Fashion"></div><nav class="footer-links"><a href="#kurumsal" class="footer-kurumsal">Kurumsal</a><a href="#koleksiyon" class="footer-koleksiyon">Koleksiyon</a><a href="#iletisim" class="footer-iletisim">İletişim</a><a href="https://www.instagram.com/u7.studiofashion" target="_blank" class="footer-ig">Instagram</a></nav><p class="footer-copy">© 2026 U7 Studio Fashion. Tüm hakları saklıdır.</p></div></footer>
+        <div class="sidebar-links">
+            <a href="#">
+                <i class="fas fa-home"></i> Ana Sayfa
+            </a>
+            <a href="#sehirler-arasi">
+                <i class="fas fa-route"></i> Şehirler Arası Nakliyat
+            </a>
+            <a href="#nakliyat-fiyatlari">
+                <i class="fas fa-money-bill-wave"></i> Nakliyat Fiyatları
+            </a>
+            <a href="#en-yakin-nakliyeci">
+                <i class="fas fa-map-marker-alt"></i> En Yakın Nakliyeci
+            </a>
+            <a href="#evden-eve-nakliyat">
+                <i class="fas fa-truck-loading"></i> Evden Eve Nakliyat
+            </a>
+            <a href="#nakliye-firmalari">
+                <i class="fas fa-building"></i> Nakliye Firmaları
+            </a>
+            <a href="#nakliyatci-numarasi">
+                <i class="fas fa-phone-alt"></i> Nakliyatçı Numarası
+            </a>
+        </div>
 
-<!-- SAĞ ALT: HEMEN ARA + WHATSAPP -->
-<div class="floating-buttons">
-  <a href="tel:02124380937" class="float-btn call-now-btn" aria-label="Hemen Ara"><i class="fas fa-phone-alt"></i></a>
-  <a href="https://wa.me/905348118440?text=Merhaba,%20U7%20Studio%20Fashion%20web%20sitenizden%20ulaşıyorum!" class="float-btn whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-</div>
+        <div class="sidebar-cta">
+            <a href="https://wa.me/905315595483?text=Merhaba,%20nakliye%20işim%20var.%20Fiyat%20teklifi%20almak%20istiyorum." target="_blank" class="sidebar-btn whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="tel:05315595483" class="sidebar-btn phone">
+                <i class="fas fa-phone"></i> 0531 559 54 83
+            </a>
+        </div>
+    </div>
 
-<script>
-  const productImages = Array.from({length:10}, (_,i)=> `https://www.u7studiofashion.com/images/${i+1}.webp`);
-  const productGrid = document.querySelector('.product-grid');
-  productGrid.innerHTML = productImages.map(src => `<article class="product-item" onclick="openLightbox(this)"><img src="${src}" alt="U7 Studio Fashion Ürün" loading="lazy"></article>`).join('');
-  
-  const observer = new IntersectionObserver((entries) => { entries.forEach((entry, i) => { if(entry.isIntersecting) { setTimeout(() => entry.target.classList.add('visible'), i * 60); observer.unobserve(entry.target); } }); }, { threshold: 0.1 });
-  document.querySelectorAll('.product-item').forEach(el => observer.observe(el));
-  
-  function openLightbox(el) { const img = el.querySelector('img'); if(img) { document.getElementById('lightboxImg').src = img.src; document.getElementById('lightbox').classList.add('open'); document.body.style.overflow = 'hidden'; } }
-  function closeLightbox() { document.getElementById('lightbox').classList.remove('open'); document.body.style.overflow = ''; }
-  function closeLightboxOutside(e) { if (e.target === document.getElementById('lightbox')) closeLightbox(); }
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
-  
-  window.addEventListener('scroll', () => { document.getElementById('mainHeader').classList.toggle('shrunk', window.scrollY > 60); });
-  function toggleMenu() { const btn = document.getElementById('hamburger'); const nav = document.getElementById('mobileNav'); if(btn && nav) { btn.classList.toggle('open'); nav.classList.toggle('open'); } }
-  
-  const translations = { tr: { nav1:'Kurumsal', nav2:'Koleksiyon', nav3:'İletişim', eyebrow:'U7 Studio Fashion', h1strong:'2026', titleShop:'U7 Shop', labelKoleksiyon:'Koleksiyon', labelIletisim:'İletişim', contactTitle:'Bize Ulaşın', adresLabel:'Adres', adresText:'YENİDOĞAN MAH. KARAKAŞ SK. CEM İŞ MERKEZİ<br>NO: 1-3 İÇ KAPI NO:201<br>BAYRAMPAŞA / İSTANBUL', telLabel:'Telefon', wpLabel:'WhatsApp', ctaOrder:'WhatsApp Sipariş', ctaCall:'Hemen Ara', igText:'Instagram', wpText:'WhatsApp', footerKurumsal:'Kurumsal', footerKoleksiyon:'Koleksiyon', footerIletisim:'İletişim', footerIg:'Instagram', footerCopy:'© 2026 U7 Studio Fashion. Tüm hakları saklıdır.' }, en: { nav1:'Corporate', nav2:'Collection', nav3:'Contact', eyebrow:'U7 Studio Fashion', h1strong:'2026', titleShop:'U7 Shop', labelKoleksiyon:'Collection', contactTitle:'Get In Touch', adresText:'YENİDOĞAN MAH. KARAKAŞ SK. CEM BUSINESS CENTER<br>NO: 1-3 INT. DOOR:201<br>BAYRAMPAŞA / ISTANBUL', telLabel:'Phone', wpLabel:'WhatsApp', ctaOrder:'WhatsApp Order', ctaCall:'Call Now', igText:'Instagram', wpText:'WhatsApp', footerKurumsal:'Corporate', footerKoleksiyon:'Collection', footerIletisim:'Contact', footerIg:'Instagram', footerCopy:'© 2026 U7 Studio Fashion. All rights reserved.' }, ru: { nav1:'О компании', nav2:'Коллекция', nav3:'Контакты', eyebrow:'U7 Studio Fashion', h1strong:'2026', titleShop:'U7 Shop', labelKoleksiyon:'Коллекция', contactTitle:'Свяжитесь с нами', adresText:'МАХ. ЕНИДОАН, УЛ. КАРАКА, БИЗ. ЦЕНТР CEM<br>НОМ: 1-3, ВН. ДВЕРЬ: 201<br>БАЙРАМПАША / СТАМБУЛ', telLabel:'Телефон', wpLabel:'WhatsApp', ctaOrder:'Заказ WhatsApp', ctaCall:'Позвонить', igText:'Instagram', wpText:'WhatsApp', footerKurumsal:'О компании', footerKoleksiyon:'Коллекция', footerIletisim:'Контакты', footerIg:'Instagram', footerCopy:'© 2026 U7 Studio Fashion. Все права защищены.' }, es: { nav1:'Corporativo', nav2:'Colección', nav3:'Contacto', eyebrow:'U7 Studio Fashion', h1strong:'2026', titleShop:'U7 Shop', labelKoleksiyon:'Colección', contactTitle:'Contáctenos', adresText:'MAH. YENIDOĞAN, CALLE KARAKAŞ, CENTRO CEM<br>N.º: 1-3 PUERTA INT.: 201<br>BAYRAMPAŞA / ESTAMBUL', telLabel:'Teléfono', wpLabel:'WhatsApp', ctaOrder:'Pedido WhatsApp', ctaCall:'Llamar ahora', igText:'Instagram', wpText:'WhatsApp', footerKurumsal:'Corporativo', footerKoleksiyon:'Colección', footerIletisim:'Contacto', footerIg:'Instagram', footerCopy:'© 2026 U7 Studio Fashion. Todos los derechos reservados.' } };
-  
-  function setLang(lang) { const t = translations[lang]; document.querySelectorAll('.nav-kurumsal').forEach(el => el.textContent = t.nav1); document.querySelectorAll('.nav-koleksiyon').forEach(el => el.textContent = t.nav2); document.querySelectorAll('.nav-iletisim').forEach(el => el.textContent = t.nav3); if(document.querySelector('.collection-eyebrow')) document.querySelector('.collection-eyebrow').textContent = t.eyebrow; if(document.querySelector('.collection-title strong')) document.querySelector('.collection-title strong').textContent = t.h1strong; if(document.querySelector('.title-shop')) document.querySelector('.title-shop').textContent = t.titleShop; if(document.querySelector('.label-koleksiyon')) document.querySelector('.label-koleksiyon').textContent = t.labelKoleksiyon; if(document.querySelector('.label-iletisim')) document.querySelector('.label-iletisim').textContent = t.labelIletisim; if(document.querySelector('.contact-title')) document.querySelector('.contact-title').textContent = t.contactTitle; if(document.querySelector('.adres-label')) document.querySelector('.adres-label').textContent = t.adresLabel; if(document.querySelector('.adres-text')) document.querySelector('.adres-text').innerHTML = t.adresText; if(document.querySelector('.tel-label')) document.querySelector('.tel-label').textContent = t.telLabel; if(document.querySelector('.wp-label')) document.querySelector('.wp-label').textContent = t.wpLabel; if(document.querySelector('.cta-order')) document.querySelector('.cta-order').textContent = t.ctaOrder; if(document.querySelector('.cta-call')) document.querySelector('.cta-call').textContent = t.ctaCall; if(document.querySelector('.ig-text')) document.querySelector('.ig-text').textContent = t.igText; if(document.querySelector('.wp-text')) document.querySelector('.wp-text').textContent = t.wpText; document.querySelectorAll('.footer-kurumsal').forEach(el => el.textContent = t.footerKurumsal); document.querySelectorAll('.footer-koleksiyon').forEach(el => el.textContent = t.footerKoleksiyon); document.querySelectorAll('.footer-iletisim').forEach(el => el.textContent = t.footerIletisim); document.querySelectorAll('.footer-ig').forEach(el => el.textContent = t.footerIg); if(document.querySelector('.footer-copy')) document.querySelector('.footer-copy').textContent = t.footerCopy; }
-  
-  window.setLang = setLang; window.openLightbox = openLightbox; window.closeLightbox = closeLightbox; window.closeLightboxOutside = closeLightboxOutside; window.toggleMenu = toggleMenu;
-</script>
+    <!-- Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- HERO SECTION -->
+    <section class="nakliye-hero">
+        <div class="nakliye-hero-content">
+            <h1>Mercan Nakliye: <span>Güvenli ve Ekonomik</span> Nakliye Çözümleri</h1>
+            <p>Türkiye'nin her yerine şehirler arası nakliyat, evden eve taşımacılık ve profesyonel nakliye hizmetleri. 20 yıllık tecrübemizle en uygun fiyatlarla güvenilir taşımacılık.</p>
+            <div class="hero-cta-buttons">
+                <a href="tel:05315595483" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Hemen Arayın: 0531 559 54 83</a>
+                <a href="https://wa.me/905315595483?text=Merhaba,%20nakliye%20işim%20var.%20Fiyat%20teklifi%20almak%20istiyorum." class="btn btn-secondary"><i class="fab fa-whatsapp"></i> WhatsApp'tan Fiyat Teklifi Al</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ANA İÇERİK -->
+    <main class="main-content">
+        <div class="content-container">
+            <!-- SOL SÜTUN - ANA İÇERİK -->
+            <article class="article-content">
+                <h1 class="section-title"><i class="fas fa-truck-moving"></i> Mercan Nakliye - Türkiye Geneli Nakliyat Hizmetleri</h1>
+                <p class="section-subtitle">2005'ten beri Türkiye'nin 81 iline güvenli, hızlı ve ekonomik nakliye hizmeti sunuyoruz. <strong>Şehirler arası nakliyat</strong>, <strong>evden eve nakliyat</strong>, ofis taşıma ve kurumsal nakliye çözümlerimizle yanınızdayız.</p>
+                
+                <!-- ŞEHİRLER ARASI NAKLİYAT -->
+                <section class="content-section" id="sehirler-arasi">
+                    <h2>Şehirler Arası Nakliyat</h2>
+                    <p><strong>Şehirler arası nakliyat</strong>, farklı şehirler arasında eşya taşıma işlemini ifade eder. Mercan Nakliye olarak, Türkiye'nin tüm illeri arasında profesyonel nakliye hizmeti sunuyoruz. İstanbul'dan Ankara'ya, İzmir'den Antalya'ya, Bursa'dan Adana'ya kadar her güzergahta hizmet veriyoruz.</p>
+                    
+                    <div class="highlight-box">
+                        <h4><i class="fas fa-info-circle"></i> Şehirler Arası Nakliyat Avantajlarımız:</h4>
+                        <ul>
+                            <li><strong>Sigortalı taşımacılık</strong> - Eşyalarınız %100 sigortalı</li>
+                            <li><strong>Profesyonel paketleme</strong> - Kırılacak eşyalar özel ambalajlarda</li>
+                            <li><strong>Zamanında teslimat</strong> - Anlaştığımız gün ve saatte teslimat</li>
+                            <li><strong>Ekonomik fiyatlar</strong> - En uygun nakliyat fiyatları</li>
+                            <li><strong>GPS Takip</strong> - Eşyalarınızı anlık takip edebilme imkanı</li>
+                        </ul>
+                    </div>
+                    
+                    <h3>Hızlı Müdahale Ekiplerimiz - 12 Büyük Şehir</h3>
+                    <div class="city-cards">
+                        <div class="city-card">
+                            <div class="city-icon">
+                                <i class="fas fa-city"></i>
+                            </div>
+                            <h4>İstanbul</h4>
+                            <p>7/24 hizmet, 1 saat içinde adresinizde</p>
+                        </div>
+                        <div class="city-card">
+                            <div class="city-icon">
+                                <i class="fas fa-landmark"></i>
+                            </div>
+                            <h4>Ankara</h4>
+                            <p>Tüm ilçelere hızlı ulaşım</p>
+                        </div>
+                        <div class="city-card">
+                            <div class="city-icon">
+                                <i class="fas fa-sun"></i>
+                            </div>
+                            <h4>İzmir</h4>
+                            <p>Merkez ve çevre ilçelerde acil nakliye</p>
+                        </div>
+                        <div class="city-card">
+                            <div class="city-icon">
+                                <i class="fas fa-tree"></i>
+                            </div>
+                            <h4>Bursa</h4>
+                            <p>Sanayi bölgelerinde özel ekipler</p>
+                        </div>
+                        <div class="city-card">
+                            <div class="city-icon">
+                                <i class="fas fa-umbrella-beach"></i>
+                            </div>
+                            <h4>Antalya</h4>
+                            <p>Turistik bölgelere özel çözümler</p>
+                        </div>
+                        <div class="city-card">
+                            <div class="city-icon">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <h4>Kocaeli</h4>
+                            <p>Sanayi nakliyesinde uzman</p>
+                        </div>
+                        <div class="city-card">
+                            <div class="city-icon">
+                                <i class="fas fa-wheat-alt"></i>
+                            </div>
+                            <h4>Konya</h4>
+                            <p>Orta Anadolu'da güvenilir hizmet</p>
+                        </div>
+                        <div class="city-card">
+                            <div class="city-icon">
+                                <i class="fas fa-pepper-hot"></i>
+                            </div>
+                            <h4>Adana</h4>
+                            <p>Çukurova bölgesinde lider</p>
+                        </div>
+                        <div class="city-card">
+                            <div class="city-icon">
+                                <i class="fas fa-mosque"></i>
+                            </div>
+                            <h4>Kayseri</h4>
+                            <p>İç Anadolu'da profesyonel çözüm</p>
+                        </div>
+                        <div class="city-card">
+                            <div class="city-icon">
+                                <i class="fas fa-mountain"></i>
+                            </div>
+                            <h4>Trabzon</h4>
+                            <p>Karadeniz'de güvenilir taşıma</p>
+                        </div>
+                        <div class="city-card">
+                            <div class="city-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <h4>Eskişehir</h4>
+                            <p>Öğrenci nakliyesinde tecrübeli</p>
+                        </div>
+                        <div class="city-card">
+                            <div class="city-icon">
+                                <i class="fas fa-store"></i>
+                            </div>
+                            <h4>Gaziantep</h4>
+                            <p>Ticari nakliyede uzman ekip</p>
+                        </div>
+                    </div>
+                    
+                    <p>Şehirler arası nakliyat işlemlerinizde, eşyalarınızın güvenliği bizim için en öncelikli konudur. Özel nakliye araçlarımız, deneyimli personelimiz ve modern ekipmanlarımızla eşyalarınızı güvenle taşıyoruz.</p>
+                    
+                    <div class="section-cta">
+                        <a href="tel:05315595483" class="section-btn phone"><i class="fas fa-phone-alt"></i> Hemen Ara: 0531 559 54 83</a>
+                        <a href="https://wa.me/905315595483?text=Merhaba,%20şehirler%20arası%20nakliyat%20hizmeti%20almak%20istiyorum." class="section-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp'tan Bilgi Al</a>
+                    </div>
+                </section>
+                
+                <!-- NAKLİYAT FİYATLARI -->
+                <section class="content-section" id="nakliyat-fiyatlari">
+                    <h2>Nakliyat Fiyatları</h2>
+                    <p><strong>Nakliyat fiyatları</strong> birçok faktöre bağlı olarak değişiklik gösterebilir. Taşınacak eşya miktarı, mesafe, kat sayısı, özel eşya varlığı ve taşıma tarihi fiyatlandırmayı etkileyen başlıca unsurlardır. Mercan Nakliye olarak şeffaf fiyat politikası izliyor, hiçbir gizli masraf uygulamıyoruz.</p>
+                    
+                    <h3>Nakliyat Fiyatını Etkileyen Faktörler</h3>
+                    <ul>
+                        <li><strong>Mesafe:</strong> Taşıma mesafesi ne kadar uzunsa maliyet o kadar artar</li>
+                        <li><strong>Eşya Miktarı:</strong> Taşınacak eşya hacmi ve ağırlığı</li>
+                        <li><strong>Özel Eşyalar:</strong> Piyano, sanat eseri, antika gibi özel eşyalar</li>
+                        <li><strong>Kat Sayısı:</strong> Asansör olup olmaması, kat yüksekliği</li>
+                        <li><strong>Park Sorunu:</strong> Aracın yükleme/boşaltma noktasına yaklaşımı</li>
+                        <li><strong>Paketleme İhtiyacı:</strong> Profesyonel paketleme gereksinimi</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <h4><i class="fas fa-calculator"></i> Ücretsiz Fiyat Teklifi Alın!</h4>
+                        <p>Tam ve net fiyat almak için bizi arayın: <strong>0531 559 54 83</strong>. Taşınacak eşya listesi, çıkış ve varış adreslerinizi belirterek anında fiyat teklifi alabilirsiniz. Nakliyat fiyatlarımızda herhangi bir gizli masraf yoktur.</p>
+                    </div>
+                    
+                    <div class="section-cta">
+                        <a href="tel:05315595483" class="section-btn phone"><i class="fas fa-phone-alt"></i> Fiyat İçin Ara</a>
+                        <a href="https://wa.me/905315595483?text=Merhaba,%20nakliyat%20fiyatı%20almak%20istiyorum." class="section-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp'tan Fiyat Al</a>
+                    </div>
+                </section>
+                
+                <!-- EN YAKIN NAKLİYECİ -->
+                <section class="content-section" id="en-yakin-nakliyeci">
+                    <h2>En Yakın Nakliyeci</h2>
+                    <p><strong>En yakın nakliyeci</strong> arayışında mısınız? Mercan Nakliye olarak Türkiye'nin 81 ilinde hizmet veriyoruz. Bulunduğunuz bölgeye en yakın şubemizden veya mobil ekibimizden hemen hizmet alabilirsiniz. Acil nakliye ihtiyaçlarınız için 7/24 hizmet veriyoruz.</p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h4>Hızlı Müdahale</h4>
+                            <p>Acil nakliye ihtiyaçlarınız için en yakın ekibimiz 1-2 saat içinde adresinizde.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <h4>Geniş Hizmet Ağı</h4>
+                            <p>Türkiye'nin tüm illerinde şubelerimiz ve mobil ekiplerimiz bulunmaktadır.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h4>7/24 Destek</h4>
+                            <p>Haftanın 7 günü, 24 saat kesintisiz müşteri hizmetleri desteği.</p>
+                        </div>
+                    </div>
+                    
+                    <p>Acil nakliye ihtiyacınız varsa hemen <strong>0531 559 54 83</strong> numaralı telefondan bize ulaşın. En yakın ekibimiz 1-2 saat içinde adresinizde olacaktır.</p>
+                    
+                    <div class="section-cta">
+                        <a href="tel:05315595483" class="section-btn phone"><i class="fas fa-phone-alt"></i> En Yakın Nakliyeci Ara</a>
+                        <a href="https://wa.me/905315595483?text=Merhaba,%20en%20yakın%20nakliyeci%20arıyorum." class="section-btn whatsapp"><i class="fab fa-whatsapp"></i> Konum Gönder</a>
+                    </div>
+                </section>
+                
+                <!-- EVDEN EVE NAKLİYAT -->
+                <section class="content-section" id="evden-eve-nakliyat">
+                    <h2>Evden Eve Nakliyat</h2>
+                    <p><strong>Evden eve nakliyat</strong> işlemlerinizde Mercan Nakliye güvencesiyle hizmet veriyoruz. Eşyalarınızın paketlenmesinden, yüklenmesine, taşınmasından yeni evinizde yerleştirilmesine kadar tüm süreci profesyonelce yönetiyoruz. 20 yıllık tecrübemizle binlerce mutlu müşteriye hizmet verdik.</p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-box-open"></i>
+                            </div>
+                            <h4>Profesyonel Paketleme</h4>
+                            <p>Kırılacak eşyalarınız özel ambalaj malzemeleriyle paketlenir. Cam, porselen, elektronik eşyalar özenle hazırlanır.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-truck-loading"></i>
+                            </div>
+                            <h4>Güvenli Yükleme</h4>
+                            <p>Eşyalarınız hasar görmeyecek şekilde özenle yüklenir. Özel bağlama teknikleriyle sabitlenir.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-people-carry"></i>
+                            </div>
+                            <h4>Yerleştirme Hizmeti</h4>
+                            <p>Yeni evinizde eşyalarınız istediğiniz yerlere yerleştirilir. Montaj gerektiren eşyalar monte edilir.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="section-cta">
+                        <a href="tel:05315595483" class="section-btn phone"><i class="fas fa-phone-alt"></i> Ev Taşıma İçin Ara</a>
+                        <a href="https://wa.me/905315595483?text=Merhaba,%20evden%20eve%20nakliyat%20hizmeti%20almak%20istiyorum." class="section-btn whatsapp"><i class="fab fa-whatsapp"></i> Ev Taşıma Bilgisi</a>
+                    </div>
+                </section>
+                
+                <!-- NAKLİYE FİRMALARI -->
+                <section class="content-section" id="nakliye-firmalari">
+                    <h2>Nakliye Firmaları İçin Referansımız</h2>
+                    <p>Mercan Nakliye olarak, <strong>nakliye firmaları</strong> arasında güvenilirliğimiz ve kalitemizle öne çıkıyoruz. 20 yılı aşkın tecrübemizle binlerce müşteriye hizmet verdik. Kurumsal müşterilerimize özel çözümler sunuyor, iş ortaklıklarımızı önemsiyoruz.</p>
+                    
+                    <h3>Neden Bizi Tercih Etmelisiniz?</h3>
+                    <ul>
+                        <li><strong>20+ Yıllık Tecrübe:</strong> 2005'ten beri nakliye sektöründeyiz</li>
+                        <li><strong>%100 Müşteri Memnuniyeti:</strong> Memnuniyet oranımız %98'in üzerinde</li>
+                        <li><strong>Sigortalı Taşımacılık:</strong> Tüm eşyalarınız sigorta kapsamında</li>
+                        <li><strong>Modern Araç Filosu:</strong> Son model nakliye araçlarımız</li>
+                        <li><strong>Profesyonel Ekip:</strong> Eğitimli ve deneyimli personel</li>
+                        <li><strong>7/24 Hizmet:</strong> Haftanın her günü, günün her saati hizmet</li>
+                        <li><strong>Kurumsal Çözümler:</strong> Firmalara özel paketler ve fiyatlandırma</li>
+                    </ul>
+                    
+                    <div class="section-cta">
+                        <a href="tel:05315595483" class="section-btn phone"><i class="fas fa-phone-alt"></i> Kurumsal İletişim</a>
+                        <a href="https://wa.me/905315595483?text=Merhaba,%20kurumsal%20nakliye%20hizmeti%20almak%20istiyorum." class="section-btn whatsapp"><i class="fab fa-whatsapp"></i> Kurumsal Teklif Al</a>
+                    </div>
+                </section>
+                
+                <!-- NAKLİYATÇI NUMARASI -->
+                <section class="content-section" id="nakliyatci-numarasi">
+                    <h2>Nakliyatçı Numarası ve İletişim</h2>
+                    <p><strong>Nakliyatçı numarası</strong> arayışınız Mercan Nakliye ile son bulsun. Türkiye geneli nakliye hizmetlerimiz için hemen bize ulaşın. Müşteri temsilcilerimiz size en uygun çözümü sunmak için hazır bekliyor.</p>
+                    
+                    <div class="highlight-box">
+                        <h4><i class="fas fa-phone-volume"></i> Hemen Arayın!</h4>
+                        <p><strong>Ana İletişim Numaramız:</strong> 0531 559 54 83</p>
+                        <p><strong>WhatsApp Hattı:</strong> 0531 559 54 83</p>
+                        <p><strong>Çalışma Saatleri:</strong> Haftanın 7 günü, 08:00 - 24:00</p>
+                        <p><strong>Acil Nakliye:</strong> 7/24 acil nakliye hattı</p>
+                        <p><strong>E-posta:</strong> info@mercannakliye.com</p>
+                    </div>
+                    
+                    <p>İstanbul, Ankara, İzmir başta olmak üzere Türkiye'nin tüm illerine hizmet veriyoruz. Özellikle büyük şehirlerde günlük seferlerimiz bulunmaktadır. Hizmet bölgelerimiz hakkında detaylı bilgi almak için bizi arayabilirsiniz.</p>
+                    
+                    <div class="section-cta">
+                        <a href="tel:05315595483" class="section-btn phone"><i class="fas fa-phone-alt"></i> Hemen Ara</a>
+                        <a href="https://wa.me/905315595483?text=Merhaba,%20nakliyat%20hakkında%20bilgi%20almak%20istiyorum." class="section-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp'tan Yaz</a>
+                    </div>
+                </section>
+            </article>
+            
+            <!-- SAĞ SÜTUN - SIDEBAR -->
+            <aside class="sidebar">
+                <!-- HIZLI İLETİŞİM -->
+                <div class="sidebar-widget quick-contact">
+                    <h3 class="widget-title"><i class="fas fa-headset"></i> Hızlı Nakliye Talebi</h3>
+                    <p style="margin-bottom: 20px; opacity: 0.9;">Ücretsiz keşif ve fiyat teklifi için hemen arayın.</p>
+                    <a href="https://wa.me/905315595483?text=Merhaba,%20nakliye%20işim%20var.%20Fiyat%20teklifi%20almak%20istiyorum." class="contact-sidebar-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp'tan Yaz</a>
+                    <a href="tel:05315595483" class="contact-sidebar-btn phone"><i class="fas fa-phone-alt"></i> 0531 559 54 83</a>
+                    <p style="margin-top: 15px; font-size: 0.9rem; opacity: 0.8;">7/24 Acil Nakliye Hattı</p>
+                </div>
+                
+                <!-- ANAHTAR KELİMELER -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title"><i class="fas fa-search"></i> Nakliye İle İlgili Aramalar</h3>
+                    <ul class="keyword-list">
+                        <li><a href="#sehirler-arasi"><i class="fas fa-chevron-right"></i> şehirler arası nakliyat</a></li>
+                        <li><a href="#nakliyat-fiyatlari"><i class="fas fa-chevron-right"></i> nakliyat fiyatları</a></li>
+                        <li><a href="#en-yakin-nakliyeci"><i class="fas fa-chevron-right"></i> en yakın nakliyeci</a></li>
+                        <li><a href="#evden-eve-nakliyat"><i class="fas fa-chevron-right"></i> evden eve nakliyat</a></li>
+                        <li><a href="#nakliye-firmalari"><i class="fas fa-chevron-right"></i> nakliye firmaları</a></li>
+                        <li><a href="#nakliyatci-numarasi"><i class="fas fa-chevron-right"></i> nakliyatçı numarası</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> ucuz nakliyat</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> ofis taşıma</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> parsiyel nakliye</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> eşya taşıma fiyatları</a></li>
+                    </ul>
+                </div>
+                
+                <!-- SIK SORULAN SORULAR -->
+                <div class="sidebar-widget faq-sidebar">
+                    <h3 class="widget-title"><i class="fas fa-question-circle"></i> Sık Sorulan Sorular</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Nakliyat fiyatı nasıl belirlenir?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Fiyat; taşınacak eşya miktarı, mesafe, kat sayısı, özel eşya varlığı, park sorunu ve taşıma tarihine göre belirlenir. Ücretsiz keşif ile en doğru fiyatı alabilirsiniz.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Eşyalarım sigortalı mı?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Evet, tüm eşyalarınız nakliye sigortamız kapsamındadır. Taşıma sırasında oluşabilecek hasarlar sigorta tarafından karşılanır.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Taşıma ne kadar sürer?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Mesafeye göre değişir. Örneğin İstanbul-Ankara arası ortalama 1 gün sürer. Büyük şehirler arası taşımalar 1-2 gün içinde tamamlanır.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Kırılacak eşyalar nasıl taşınır?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Kırılacak eşyalar özel ambalaj malzemeleri (köpük, strafor, bubble wrap) ile paketlenir, özel bölmelerde taşınır.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Hafta sonu ve tatillerde hizmet veriyor musunuz?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Evet, haftanın 7 günü, resmi tatiller dahil 08:00-24:00 saatleri arasında hizmet veriyoruz. Acil nakliye için 7/24 hizmetimiz mevcuttur.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Ödemeyi ne zaman yapmalıyım?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ödeme, eşyalarınız yeni adresinize teslim edilip yerleştirildikten sonra yapılır. Peşin veya kredi kartı ile ödeme seçeneklerimiz mevcuttur.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Parsiyel nakliye nedir?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Parsiyel nakliye, tam yük dolmayacak miktardaki eşyaların başka yüklerle birlikte taşınmasıdır. Bu yöntemle nakliye maliyetleri düşer.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Eşyalarımı nasıl takip edebilirim?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>GPS sistemi ile eşyalarınızı anlık takip edebilirsiniz. Ayrıca müşteri temsilcimiz size düzenli bilgi verir.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Taşıma öncesi neler yapmalıyım?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Değerli eşyalarınızı (mücevher, nakit, önemli belgeler) yanınıza alın. Eşyalarınızı kategorilere ayırın ve taşınmayacak eşyaları ayırın.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Montaj gerektiren eşyalar için hizmetiniz var mı?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Evet, yatak, dolap, kitaplık gibi montaj gerektiren eşyalarınızı söküp yeni adresinizde kuruyoruz.</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <h2>Nakliye İşleminiz İçin Hemen Teklif Alın!</h2>
+        <p>Mercan Nakliye'nin tecrübeli ekibiyle eşyalarınız güvende. Ücretsiz keşif ve en uygun fiyat garantisi.</p>
+        <div class="cta-buttons">
+            <a href="tel:05315595483" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Hemen Ara: 0531 559 54 83</a>
+            <a href="https://wa.me/905315595483?text=Merhaba,%20nakliye%20işim%20var.%20Fiyat%20teklifi%20almak%20istiyorum." class="btn btn-secondary"><i class="fab fa-whatsapp"></i> WhatsApp'tan Fiyat Teklifi Al</a>
+        </div>
+    </section>
+
+    <!-- OTOMATİK SOHBET BALONU -->
+    <div class="chat-bubble" id="chatBubble">
+        <div class="chat-content">
+            <button class="chat-close" id="chatClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="chat-header">
+                <div class="chat-avatar">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <div class="chat-text">
+                    <h4>Mercan Nakliye</h4>
+                    <p>Nakliye aracımız şuan müsait. Fiyat teklifi için hemen arayın!</p>
+                </div>
+            </div>
+            <a href="tel:05315595483" class="chat-call-btn">
+                <i class="fas fa-phone-alt"></i> 0531 559 54 83
+            </a>
+        </div>
+    </div>
+
+    <!-- FLOATING CTA -->
+    <div class="floating-cta">
+        <a href="https://wa.me/905315595483?text=Merhaba,%20nakliye%20işim%20var.%20Fiyat%20teklifi%20almak%20istiyorum." class="floating-btn floating-whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:05315595483" class="floating-btn floating-phone">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-truck"></i> Mercan Nakliye
+            </div>
+            
+            <div class="footer-contact">
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>0531 559 54 83</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@mercannakliye.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <span>7/24 Acil Nakliye Hattı</span>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#sehirler-arasi">Şehirler Arası Nakliyat</a>
+                <a href="#nakliyat-fiyatlari">Nakliyat Fiyatları</a>
+                <a href="#en-yakin-nakliyeci">En Yakın Nakliyeci</a>
+                <a href="#evden-eve-nakliyat">Evden Eve Nakliyat</a>
+                <a href="#nakliye-firmalari">Nakliye Firmaları</a>
+                <a href="#nakliyatci-numarasi">Nakliyatçı Numarası</a>
+            </div>
+            
+            <div class="copyright">
+                © 2025 Mercan Nakliye. Tüm hakları saklıdır. | Türkiye Geneli Nakliyat Hizmetleri
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // Hamburger Menü JavaScript
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menuToggle');
+        const sidebarMenu = document.getElementById('sidebarMenu');
+        const sidebarClose = document.getElementById('sidebarClose');
+        const sidebarOverlay = document.getElementById('sidebarOverlay');
+        
+        // Menü aç
+        if (menuToggle) {
+            menuToggle.addEventListener('click', function() {
+                this.classList.toggle('active');
+                sidebarMenu.classList.toggle('active');
+                sidebarOverlay.classList.toggle('active');
+                document.body.style.overflow = 'hidden';
+            });
+        }
+        
+        // Menü kapat
+        function closeMenu() {
+            if (menuToggle) menuToggle.classList.remove('active');
+            if (sidebarMenu) sidebarMenu.classList.remove('active');
+            if (sidebarOverlay) sidebarOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        if (sidebarClose) {
+            sidebarClose.addEventListener('click', closeMenu);
+        }
+        
+        if (sidebarOverlay) {
+            sidebarOverlay.addEventListener('click', closeMenu);
+        }
+        
+        // Menü linklerine tıklayınca menüyü kapat
+        const sidebarLinks = document.querySelectorAll('.sidebar-links a');
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                // Sadece submenu dışındaki linkler menüyü kapatsın
+                if (!this.parentElement.classList.contains('submenu')) {
+                    closeMenu();
+                }
+            });
+        });
+        
+        // ESC tuşu ile menüyü kapat
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeMenu();
+            }
+        });
+        
+        // OTOMATİK SOHBET BALONU - 4 saniye sonra aç
+        const chatBubble = document.getElementById('chatBubble');
+        const chatClose = document.getElementById('chatClose');
+        
+        setTimeout(() => {
+            if (chatBubble) {
+                chatBubble.classList.add('active');
+            }
+        }, 4000);
+        
+        // Sohbet balonunu kapat
+        if (chatClose) {
+            chatClose.addEventListener('click', function() {
+                if (chatBubble) {
+                    chatBubble.classList.remove('active');
+                }
+            });
+        }
+        
+        // 30 saniye sonra balonu otomatik kapat
+        setTimeout(() => {
+            if (chatBubble && chatBubble.classList.contains('active')) {
+                chatBubble.classList.remove('active');
+            }
+        }, 30000);
+    });
+
+    // FAQ Toggle
+    document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', () => {
+            const item = question.parentElement;
+            item.classList.toggle('active');
+        });
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if(targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if(targetElement) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: targetElement.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Add active class to current section in viewport
+    const sections = document.querySelectorAll('.content-section');
+    const observerOptions = {
+        threshold: 0.3,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, observerOptions);
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+    
+    // Telefon numarası tıklama analizi
+    document.querySelectorAll('a[href^="tel:"]').forEach(phoneLink => {
+        phoneLink.addEventListener('click', function() {
+            console.log('Telefon arandı: ' + this.getAttribute('href'));
+        });
+    });
+    </script>
 </body>
 </html>
