@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mercan Nakliye | Türkiye Geneli Evden Eve Nakliyat Hizmetleri</title>
-    <meta name="description" content="Mercan Nakliye ile güvenli, ekonomik ve profesyonel şehirler arası nakliyat hizmeti. Nakliyat fiyatları, en yakın nakliyeci, evden eve nakliyat çözümleri." />
-    <meta name="keywords" content="şehirler arası nakliyat, nakliyat fiyatları, en yakın nakliyeci, evden eve nakliyat, nakliye firmaları, nakliyatçı numarası, Mercan Nakliye" />
+    <title>Mercan Nakliye | Şehirler Arası Nakliyat & Tır Nakliye Fiyatları</title>
+    <meta name="description" content="Mercan Nakliye ile güvenli, ekonomik ve profesyonel şehirler arası nakliyat, sigortalı taşıma, tır nakliye ücretleri ve en uygun nakliye fiyatları. Türkiye geneli nakliyeciler." />
+    <meta name="keywords" content="şehirler arası nakliyat, nakliyat fiyatları, en yakın nakliyeci, evden eve nakliyat, nakliye firmaları, nakliyatçı numarası, tır nakliye ücretleri, tır nakliyat fiyatları, sigortalı nakliye, nakliyeciler" />
     <meta name="robots" content="index, follow" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -47,7 +47,7 @@
             overflow-x: hidden;
         }
 
-        /* HAMBURGER MENÜ CSS */
+        /* HAMBURGER MENÜ CSS (tasarım aynen korundu) */
         .top-bar {
             position: fixed;
             top: 0;
@@ -78,7 +78,6 @@
             font-size: 1.8rem;
         }
 
-        /* Hamburger Menü Butonu */
         .menu-toggle {
             display: flex;
             flex-direction: column;
@@ -112,7 +111,6 @@
             transform: rotate(-45deg) translate(7px, -6px);
         }
 
-        /* Yandan Açılır Menü */
         .sidebar-menu {
             position: fixed;
             top: 0;
@@ -139,10 +137,6 @@
             border-bottom: 1px solid #eee;
             background: white;
             height: 70px;
-        }
-
-        .sidebar-header .logo {
-            display: none;
         }
 
         .sidebar-close {
@@ -205,7 +199,6 @@
             color: var(--primary);
         }
 
-        /* Submenu Styles */
         .submenu {
             max-height: 0;
             overflow: hidden;
@@ -274,7 +267,6 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
-        /* Overlay */
         .sidebar-overlay {
             position: fixed;
             top: 0;
@@ -396,7 +388,7 @@
             }
         }
 
-        /* SOL SÜTUN - İÇERİK */
+        /* SOL SÜTUN */
         .article-content {
             background: var(--white);
             border-radius: var(--radius);
@@ -480,13 +472,6 @@
             border-radius: 0 var(--radius) var(--radius) 0;
         }
 
-        .highlight-box h4 {
-            color: var(--primary);
-            font-size: 1.2rem;
-            margin-bottom: 15px;
-            font-weight: 700;
-        }
-
         .feature-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -501,30 +486,6 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             border: 1px solid var(--gray-light);
             transition: var(--transition);
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .feature-icon {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-            color: white;
-            font-size: 1.5rem;
-        }
-
-        .feature-card h4 {
-            font-size: 1.2rem;
-            margin-bottom: 12px;
-            color: var(--dark);
         }
 
         .city-cards {
@@ -546,7 +507,6 @@
 
         .city-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
             border-color: var(--primary);
         }
 
@@ -561,18 +521,6 @@
             margin: 0 auto 15px;
             color: white;
             font-size: 1.3rem;
-        }
-
-        .city-card h4 {
-            font-size: 1.1rem;
-            margin-bottom: 8px;
-            color: var(--dark);
-        }
-
-        .city-card p {
-            font-size: 0.9rem;
-            color: var(--gray);
-            margin-bottom: 0;
         }
 
         .section-cta {
@@ -604,12 +552,6 @@
             color: white;
         }
 
-        .section-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        /* SAĞ SÜTUN - SIDEBAR */
         .sidebar {
             display: flex;
             flex-direction: column;
@@ -667,11 +609,6 @@
             color: white;
         }
 
-        .contact-sidebar-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-        }
-
         .keyword-list {
             list-style: none;
         }
@@ -680,12 +617,6 @@
             margin-bottom: 12px;
             padding-bottom: 12px;
             border-bottom: 1px solid var(--gray-light);
-        }
-
-        .keyword-list li:last-child {
-            margin-bottom: 0;
-            padding-bottom: 0;
-            border-bottom: none;
         }
 
         .keyword-list a {
@@ -701,57 +632,32 @@
             transform: translateX(5px);
         }
 
-        .keyword-list i {
-            color: var(--primary);
-            margin-right: 10px;
-            font-size: 0.9rem;
-        }
-
         .faq-sidebar .faq-item {
             margin-bottom: 15px;
             padding-bottom: 15px;
             border-bottom: 1px solid var(--gray-light);
         }
 
-        .faq-sidebar .faq-item:last-child {
-            margin-bottom: 0;
-            padding-bottom: 0;
-            border-bottom: none;
-        }
-
-        .faq-sidebar .faq-question {
+        .faq-question {
             font-weight: 600;
-            color: var(--dark);
-            margin-bottom: 8px;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        .faq-sidebar .faq-question i {
-            transition: transform 0.3s ease;
-            color: var(--primary);
-        }
-
-        .faq-sidebar .faq-item.active .faq-question i {
-            transform: rotate(180deg);
-        }
-
-        .faq-sidebar .faq-answer {
+        .faq-answer {
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.5s ease;
             color: var(--gray);
-            line-height: 1.6;
         }
 
-        .faq-sidebar .faq-item.active .faq-answer {
+        .faq-item.active .faq-answer {
             max-height: 300px;
             margin-top: 10px;
         }
 
-        /* CTA SECTION */
         .cta-section {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
             padding: 100px 20px;
@@ -762,27 +668,6 @@
             max-width: 1200px;
         }
 
-        .cta-section h2 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 20px;
-        }
-
-        .cta-section p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto 40px;
-            opacity: 0.9;
-        }
-
-        .cta-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        /* OTOMATİK SOHBET BALONU */
         .chat-bubble {
             position: fixed;
             bottom: 30px;
@@ -807,54 +692,7 @@
             box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
             width: 300px;
             border: 1px solid var(--gray-light);
-        }
-
-        .chat-header {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 15px;
-        }
-
-        .chat-avatar {
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.5rem;
-        }
-
-        .chat-text h4 {
-            font-size: 1.1rem;
-            margin-bottom: 5px;
-            color: var(--dark);
-        }
-
-        .chat-text p {
-            font-size: 0.9rem;
-            color: var(--gray);
-        }
-
-        .chat-call-btn {
-            display: block;
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            color: white;
-            text-align: center;
-            padding: 12px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: 600;
-            margin-top: 15px;
-            transition: var(--transition);
-        }
-
-        .chat-call-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(26, 86, 219, 0.3);
+            position: relative;
         }
 
         .chat-close {
@@ -866,15 +704,9 @@
             width: 25px;
             height: 25px;
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             cursor: pointer;
-            font-size: 0.8rem;
-            color: var(--gray);
         }
 
-        /* FLOATING CTA */
         .floating-cta {
             position: fixed;
             bottom: 30px;
@@ -898,11 +730,6 @@
             font-size: 1.8rem;
         }
 
-        .floating-btn:hover {
-            transform: scale(1.1);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-        }
-
         .floating-whatsapp {
             background: linear-gradient(135deg, #25D366, #128C7E);
             color: white;
@@ -915,19 +742,29 @@
         }
 
         @keyframes pulse {
-            0% {
-                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-            }
-            70% {
-                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
-            }
-            100% {
-                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-            }
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
         }
 
-        /* FOOTER */
         footer {
+            background: var(--white);
+            padding: 60px 20px 30px;
+            text-align: center;
+            border-top: 1px solid var(--gray-light);
+        }
+        .copyright {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--gray-light);
+            color: #dc2626;
+            font-weight: 600;
+        }
+        @media (max-width: 768px) {
+            .article-content { padding: 30px 20px; }
+            .nakliye-hero h1 { font-size: 2.2rem; }
+        }
+         footer {
             background: var(--white);
             color: var(--dark);
             padding: 60px 20px 30px;
@@ -999,597 +836,141 @@
             width: 100%;
             font-weight: 600;
         }
-
-        /* RESPONSIVE */
-        @media (max-width: 768px) {
-            .nakliye-hero {
-                padding: 100px 20px 80px;
-            }
-            
-            .nakliye-hero h1 {
-                font-size: 2.2rem;
-            }
-            
-            .nakliye-hero p {
-                font-size: 1.1rem;
-            }
-            
-            .btn {
-                min-width: 100%;
-                padding: 16px 24px;
-            }
-            
-            .hero-cta-buttons, .cta-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .article-content {
-                padding: 30px 20px;
-            }
-            
-            .section-title {
-                font-size: 1.8rem;
-            }
-            
-            .floating-cta {
-                bottom: 20px;
-                right: 20px;
-            }
-            
-            .floating-btn {
-                width: 55px;
-                height: 55px;
-                font-size: 1.6rem;
-            }
-            
-            .sidebar-menu {
-                width: 280px;
-            }
-            
-            .chat-content {
-                width: 280px;
-                right: 10px;
-                bottom: 10px;
-            }
-            
-            .section-cta {
-                flex-direction: column;
-            }
-            
-            .city-cards {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 15px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .nakliye-hero h1 {
-                font-size: 1.8rem;
-            }
-            
-            .feature-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .city-cards {
-                grid-template-columns: 1fr;
-            }
-        }
     </style>
 </head>
 <body>
-    <!-- HAMBURGER MENÜ -->
     <div class="top-bar">
-        <div class="logo">
-            <a href="/"><i class="fas fa-truck"></i> Mercan Nakliye</a>
-        </div>
-        <button class="menu-toggle" id="menuToggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+        <div class="logo"><a href="/"><i class="fas fa-truck"></i> Mercan Nakliye</a></div>
+        <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
     </div>
-
-    <!-- Sidebar Menü -->
     <div class="sidebar-menu" id="sidebarMenu">
-        <div class="sidebar-header">
-            <button class="sidebar-close" id="sidebarClose">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-
+        <div class="sidebar-header"><button class="sidebar-close" id="sidebarClose"><i class="fas fa-times"></i></button></div>
         <div class="sidebar-links">
-            <a href="#">
-                <i class="fas fa-home"></i> Ana Sayfa
-            </a>
-            <a href="#sehirler-arasi">
-                <i class="fas fa-route"></i> Şehirler Arası Nakliyat
-            </a>
-            <a href="#nakliyat-fiyatlari">
-                <i class="fas fa-money-bill-wave"></i> Nakliyat Fiyatları
-            </a>
-            <a href="#en-yakin-nakliyeci">
-                <i class="fas fa-map-marker-alt"></i> En Yakın Nakliyeci
-            </a>
-            <a href="#evden-eve-nakliyat">
-                <i class="fas fa-truck-loading"></i> Evden Eve Nakliyat
-            </a>
-            <a href="#nakliye-firmalari">
-                <i class="fas fa-building"></i> Nakliye Firmaları
-            </a>
-            <a href="#nakliyatci-numarasi">
-                <i class="fas fa-phone-alt"></i> Nakliyatçı Numarası
-            </a>
+            <a href="#"><i class="fas fa-home"></i> Ana Sayfa</a>
+            <a href="#sehirler-arasi-nakliyat"><i class="fas fa-route"></i> Şehirler Arası Nakliyat</a>
+            <a href="#nakliye-firmalari"><i class="fas fa-building"></i> Nakliye Firmaları</a>
+            <a href="#nakliyeciler"><i class="fas fa-users"></i> Nakliyeciler</a>
+            <a href="#tir-nakliye-ucretleri"><i class="fas fa-truck"></i> Tır Nakliye Ücretleri</a>
         </div>
-
         <div class="sidebar-cta">
-            <a href="https://wa.me/905315595483?text=Merhaba,%20nakliye%20işim%20var.%20Fiyat%20teklifi%20almak%20istiyorum." target="_blank" class="sidebar-btn whatsapp">
-                <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
-            <a href="tel:05315595483" class="sidebar-btn phone">
-                <i class="fas fa-phone"></i> 0531 559 54 83
-            </a>
+            <a href="https://wa.me/905315595483" target="_blank" class="sidebar-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="tel:05315595483" class="sidebar-btn phone"><i class="fas fa-phone"></i> 0531 559 54 83</a>
         </div>
     </div>
-
-    <!-- Overlay -->
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-    <!-- HERO SECTION -->
     <section class="nakliye-hero">
         <div class="nakliye-hero-content">
-            <h1>Mercan Nakliye: <span>Güvenli ve Ekonomik</span> Nakliye Çözümleri</h1>
-            <p>Türkiye'nin her yerine şehirler arası nakliyat, evden eve taşımacılık ve profesyonel nakliye hizmetleri. 20 yıllık tecrübemizle en uygun fiyatlarla güvenilir taşımacılık.</p>
+            <h1>Mercan Nakliye: <span>Şehirler Arası & Tır Nakliye</span> Çözümleri</h1>
+            <p>Profesyonel nakliye firmaları arasında en güvenilir adres. Sigortalı nakliye, uygun tır nakliyat fiyatları ve şehirler arası taşımacılık.</p>
             <div class="hero-cta-buttons">
-                <a href="tel:05315595483" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Hemen Arayın: 0531 559 54 83</a>
-                <a href="https://wa.me/905315595483?text=Merhaba,%20nakliye%20işim%20var.%20Fiyat%20teklifi%20almak%20istiyorum." class="btn btn-secondary"><i class="fab fa-whatsapp"></i> WhatsApp'tan Fiyat Teklifi Al</a>
+                <a href="tel:05315595483" class="btn btn-primary"><i class="fas fa-phone-alt"></i> 0531 559 54 83</a>
+                <a href="https://wa.me/905315595483" class="btn btn-secondary"><i class="fab fa-whatsapp"></i> WhatsApp Teklif</a>
             </div>
         </div>
     </section>
 
-    <!-- ANA İÇERİK -->
     <main class="main-content">
         <div class="content-container">
-            <!-- SOL SÜTUN - ANA İÇERİK -->
             <article class="article-content">
-                <h1 class="section-title"><i class="fas fa-truck-moving"></i> Mercan Nakliye - Türkiye Geneli Nakliyat Hizmetleri</h1>
-                <p class="section-subtitle">2005'ten beri Türkiye'nin 81 iline güvenli, hızlı ve ekonomik nakliye hizmeti sunuyoruz. <strong>Şehirler arası nakliyat</strong>, <strong>evden eve nakliyat</strong>, ofis taşıma ve kurumsal nakliye çözümlerimizle yanınızdayız.</p>
+                <h1 class="section-title"><i class="fas fa-truck-moving"></i> Mercan Nakliye - Profesyonel Taşımacılık</h1>
+                <p class="section-subtitle">2005'ten beri Türkiye geneli güvenli, ekonomik nakliyat ve tır nakliye hizmetleri. Sigortalı, hızlı ve profesyonel çözümler.</p>
                 
-                <!-- ŞEHİRLER ARASI NAKLİYAT -->
-                <section class="content-section" id="sehirler-arasi">
+                <!-- H2: Şehirler Arası Nakliyat -->
+                <section class="content-section" id="sehirler-arasi-nakliyat">
                     <h2>Şehirler Arası Nakliyat</h2>
-                    <p><strong>Şehirler arası nakliyat</strong>, farklı şehirler arasında eşya taşıma işlemini ifade eder. Mercan Nakliye olarak, Türkiye'nin tüm illeri arasında profesyonel nakliye hizmeti sunuyoruz. İstanbul'dan Ankara'ya, İzmir'den Antalya'ya, Bursa'dan Adana'ya kadar her güzergahta hizmet veriyoruz.</p>
-                    
+                    <p><strong>Şehirler arası nakliyat</strong> alanında Türkiye'nin dört bir yanına kesintisiz hizmet sunuyoruz. İstanbul, Ankara, İzmir, Bursa, Antalya, Adana, Trabzon gibi 81 ilde şehirlerarası taşımacılık yapıyoruz. Profesyonel ekip ve modern filomuz ile eşyalarınız hasarsız ve zamanında adresine ulaşır. Şehirler arası nakliyat sürecinde sigortalı taşıma garantisi, uygun fiyat ve hızlı teslimat önceliklerimiz arasındadır.</p>
                     <div class="highlight-box">
-                        <h4><i class="fas fa-info-circle"></i> Şehirler Arası Nakliyat Avantajlarımız:</h4>
-                        <ul>
-                            <li><strong>Sigortalı taşımacılık</strong> - Eşyalarınız %100 sigortalı</li>
-                            <li><strong>Profesyonel paketleme</strong> - Kırılacak eşyalar özel ambalajlarda</li>
-                            <li><strong>Zamanında teslimat</strong> - Anlaştığımız gün ve saatte teslimat</li>
-                            <li><strong>Ekonomik fiyatlar</strong> - En uygun nakliyat fiyatları</li>
-                            <li><strong>GPS Takip</strong> - Eşyalarınızı anlık takip edebilme imkanı</li>
-                        </ul>
+                        <h4><i class="fas fa-info-circle"></i> Şehirler Arası Nakliyat Avantajları</h4>
+                        <ul><li>GPS takip & zamanında teslimat</li><li>%100 sigortalı eşya güvencesi</li><li>Profesyonel paketleme ve montaj</li><li>Uygun nakliye ücretleri</li></ul>
                     </div>
-                    
-                    <h3>Hızlı Müdahale Ekiplerimiz - 12 Büyük Şehir</h3>
-                    <div class="city-cards">
-                        <div class="city-card">
-                            <div class="city-icon">
-                                <i class="fas fa-city"></i>
-                            </div>
-                            <h4>İstanbul</h4>
-                            <p>7/24 hizmet, 1 saat içinde adresinizde</p>
-                        </div>
-                        <div class="city-card">
-                            <div class="city-icon">
-                                <i class="fas fa-landmark"></i>
-                            </div>
-                            <h4>Ankara</h4>
-                            <p>Tüm ilçelere hızlı ulaşım</p>
-                        </div>
-                        <div class="city-card">
-                            <div class="city-icon">
-                                <i class="fas fa-sun"></i>
-                            </div>
-                            <h4>İzmir</h4>
-                            <p>Merkez ve çevre ilçelerde acil nakliye</p>
-                        </div>
-                        <div class="city-card">
-                            <div class="city-icon">
-                                <i class="fas fa-tree"></i>
-                            </div>
-                            <h4>Bursa</h4>
-                            <p>Sanayi bölgelerinde özel ekipler</p>
-                        </div>
-                        <div class="city-card">
-                            <div class="city-icon">
-                                <i class="fas fa-umbrella-beach"></i>
-                            </div>
-                            <h4>Antalya</h4>
-                            <p>Turistik bölgelere özel çözümler</p>
-                        </div>
-                        <div class="city-card">
-                            <div class="city-icon">
-                                <i class="fas fa-industry"></i>
-                            </div>
-                            <h4>Kocaeli</h4>
-                            <p>Sanayi nakliyesinde uzman</p>
-                        </div>
-                        <div class="city-card">
-                            <div class="city-icon">
-                                <i class="fas fa-wheat-alt"></i>
-                            </div>
-                            <h4>Konya</h4>
-                            <p>Orta Anadolu'da güvenilir hizmet</p>
-                        </div>
-                        <div class="city-card">
-                            <div class="city-icon">
-                                <i class="fas fa-pepper-hot"></i>
-                            </div>
-                            <h4>Adana</h4>
-                            <p>Çukurova bölgesinde lider</p>
-                        </div>
-                        <div class="city-card">
-                            <div class="city-icon">
-                                <i class="fas fa-mosque"></i>
-                            </div>
-                            <h4>Kayseri</h4>
-                            <p>İç Anadolu'da profesyonel çözüm</p>
-                        </div>
-                        <div class="city-card">
-                            <div class="city-icon">
-                                <i class="fas fa-mountain"></i>
-                            </div>
-                            <h4>Trabzon</h4>
-                            <p>Karadeniz'de güvenilir taşıma</p>
-                        </div>
-                        <div class="city-card">
-                            <div class="city-icon">
-                                <i class="fas fa-university"></i>
-                            </div>
-                            <h4>Eskişehir</h4>
-                            <p>Öğrenci nakliyesinde tecrübeli</p>
-                        </div>
-                        <div class="city-card">
-                            <div class="city-icon">
-                                <i class="fas fa-store"></i>
-                            </div>
-                            <h4>Gaziantep</h4>
-                            <p>Ticari nakliyede uzman ekip</p>
-                        </div>
-                    </div>
-                    
-                    <p>Şehirler arası nakliyat işlemlerinizde, eşyalarınızın güvenliği bizim için en öncelikli konudur. Özel nakliye araçlarımız, deneyimli personelimiz ve modern ekipmanlarımızla eşyalarınızı güvenle taşıyoruz.</p>
-                    
-                    <div class="section-cta">
-                        <a href="tel:05315595483" class="section-btn phone"><i class="fas fa-phone-alt"></i> Hemen Ara: 0531 559 54 83</a>
-                        <a href="https://wa.me/905315595483?text=Merhaba,%20şehirler%20arası%20nakliyat%20hizmeti%20almak%20istiyorum." class="section-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp'tan Bilgi Al</a>
-                    </div>
+                    <div class="section-cta"><a href="tel:05315595483" class="section-btn phone"><i class="fas fa-phone-alt"></i> Şehirler Arası Teklif</a></div>
                 </section>
                 
-                <!-- NAKLİYAT FİYATLARI -->
-                <section class="content-section" id="nakliyat-fiyatlari">
-                    <h2>Nakliyat Fiyatları</h2>
-                    <p><strong>Nakliyat fiyatları</strong> birçok faktöre bağlı olarak değişiklik gösterebilir. Taşınacak eşya miktarı, mesafe, kat sayısı, özel eşya varlığı ve taşıma tarihi fiyatlandırmayı etkileyen başlıca unsurlardır. Mercan Nakliye olarak şeffaf fiyat politikası izliyor, hiçbir gizli masraf uygulamıyoruz.</p>
-                    
-                    <h3>Nakliyat Fiyatını Etkileyen Faktörler</h3>
-                    <ul>
-                        <li><strong>Mesafe:</strong> Taşıma mesafesi ne kadar uzunsa maliyet o kadar artar</li>
-                        <li><strong>Eşya Miktarı:</strong> Taşınacak eşya hacmi ve ağırlığı</li>
-                        <li><strong>Özel Eşyalar:</strong> Piyano, sanat eseri, antika gibi özel eşyalar</li>
-                        <li><strong>Kat Sayısı:</strong> Asansör olup olmaması, kat yüksekliği</li>
-                        <li><strong>Park Sorunu:</strong> Aracın yükleme/boşaltma noktasına yaklaşımı</li>
-                        <li><strong>Paketleme İhtiyacı:</strong> Profesyonel paketleme gereksinimi</li>
-                    </ul>
-                    
-                    <div class="highlight-box">
-                        <h4><i class="fas fa-calculator"></i> Ücretsiz Fiyat Teklifi Alın!</h4>
-                        <p>Tam ve net fiyat almak için bizi arayın: <strong>0531 559 54 83</strong>. Taşınacak eşya listesi, çıkış ve varış adreslerinizi belirterek anında fiyat teklifi alabilirsiniz. Nakliyat fiyatlarımızda herhangi bir gizli masraf yoktur.</p>
-                    </div>
-                    
-                    <div class="section-cta">
-                        <a href="tel:05315595483" class="section-btn phone"><i class="fas fa-phone-alt"></i> Fiyat İçin Ara</a>
-                        <a href="https://wa.me/905315595483?text=Merhaba,%20nakliyat%20fiyatı%20almak%20istiyorum." class="section-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp'tan Fiyat Al</a>
-                    </div>
-                </section>
-                
-                <!-- EN YAKIN NAKLİYECİ -->
-                <section class="content-section" id="en-yakin-nakliyeci">
-                    <h2>En Yakın Nakliyeci</h2>
-                    <p><strong>En yakın nakliyeci</strong> arayışında mısınız? Mercan Nakliye olarak Türkiye'nin 81 ilinde hizmet veriyoruz. Bulunduğunuz bölgeye en yakın şubemizden veya mobil ekibimizden hemen hizmet alabilirsiniz. Acil nakliye ihtiyaçlarınız için 7/24 hizmet veriyoruz.</p>
-                    
-                    <div class="feature-grid">
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <h4>Hızlı Müdahale</h4>
-                            <p>Acil nakliye ihtiyaçlarınız için en yakın ekibimiz 1-2 saat içinde adresinizde.</p>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-map-marked-alt"></i>
-                            </div>
-                            <h4>Geniş Hizmet Ağı</h4>
-                            <p>Türkiye'nin tüm illerinde şubelerimiz ve mobil ekiplerimiz bulunmaktadır.</p>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-headset"></i>
-                            </div>
-                            <h4>7/24 Destek</h4>
-                            <p>Haftanın 7 günü, 24 saat kesintisiz müşteri hizmetleri desteği.</p>
-                        </div>
-                    </div>
-                    
-                    <p>Acil nakliye ihtiyacınız varsa hemen <strong>0531 559 54 83</strong> numaralı telefondan bize ulaşın. En yakın ekibimiz 1-2 saat içinde adresinizde olacaktır.</p>
-                    
-                    <div class="section-cta">
-                        <a href="tel:05315595483" class="section-btn phone"><i class="fas fa-phone-alt"></i> En Yakın Nakliyeci Ara</a>
-                        <a href="https://wa.me/905315595483?text=Merhaba,%20en%20yakın%20nakliyeci%20arıyorum." class="section-btn whatsapp"><i class="fab fa-whatsapp"></i> Konum Gönder</a>
-                    </div>
-                </section>
-                
-                <!-- EVDEN EVE NAKLİYAT -->
-                <section class="content-section" id="evden-eve-nakliyat">
-                    <h2>Evden Eve Nakliyat</h2>
-                    <p><strong>Evden eve nakliyat</strong> işlemlerinizde Mercan Nakliye güvencesiyle hizmet veriyoruz. Eşyalarınızın paketlenmesinden, yüklenmesine, taşınmasından yeni evinizde yerleştirilmesine kadar tüm süreci profesyonelce yönetiyoruz. 20 yıllık tecrübemizle binlerce mutlu müşteriye hizmet verdik.</p>
-                    
-                    <div class="feature-grid">
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-box-open"></i>
-                            </div>
-                            <h4>Profesyonel Paketleme</h4>
-                            <p>Kırılacak eşyalarınız özel ambalaj malzemeleriyle paketlenir. Cam, porselen, elektronik eşyalar özenle hazırlanır.</p>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-truck-loading"></i>
-                            </div>
-                            <h4>Güvenli Yükleme</h4>
-                            <p>Eşyalarınız hasar görmeyecek şekilde özenle yüklenir. Özel bağlama teknikleriyle sabitlenir.</p>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-people-carry"></i>
-                            </div>
-                            <h4>Yerleştirme Hizmeti</h4>
-                            <p>Yeni evinizde eşyalarınız istediğiniz yerlere yerleştirilir. Montaj gerektiren eşyalar monte edilir.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="section-cta">
-                        <a href="tel:05315595483" class="section-btn phone"><i class="fas fa-phone-alt"></i> Ev Taşıma İçin Ara</a>
-                        <a href="https://wa.me/905315595483?text=Merhaba,%20evden%20eve%20nakliyat%20hizmeti%20almak%20istiyorum." class="section-btn whatsapp"><i class="fab fa-whatsapp"></i> Ev Taşıma Bilgisi</a>
-                    </div>
-                </section>
-                
-                <!-- NAKLİYE FİRMALARI -->
+                <!-- H2: Nakliye Firmaları -->
                 <section class="content-section" id="nakliye-firmalari">
-                    <h2>Nakliye Firmaları İçin Referansımız</h2>
-                    <p>Mercan Nakliye olarak, <strong>nakliye firmaları</strong> arasında güvenilirliğimiz ve kalitemizle öne çıkıyoruz. 20 yılı aşkın tecrübemizle binlerce müşteriye hizmet verdik. Kurumsal müşterilerimize özel çözümler sunuyor, iş ortaklıklarımızı önemsiyoruz.</p>
-                    
-                    <h3>Neden Bizi Tercih Etmelisiniz?</h3>
-                    <ul>
-                        <li><strong>20+ Yıllık Tecrübe:</strong> 2005'ten beri nakliye sektöründeyiz</li>
-                        <li><strong>%100 Müşteri Memnuniyeti:</strong> Memnuniyet oranımız %98'in üzerinde</li>
-                        <li><strong>Sigortalı Taşımacılık:</strong> Tüm eşyalarınız sigorta kapsamında</li>
-                        <li><strong>Modern Araç Filosu:</strong> Son model nakliye araçlarımız</li>
-                        <li><strong>Profesyonel Ekip:</strong> Eğitimli ve deneyimli personel</li>
-                        <li><strong>7/24 Hizmet:</strong> Haftanın her günü, günün her saati hizmet</li>
-                        <li><strong>Kurumsal Çözümler:</strong> Firmalara özel paketler ve fiyatlandırma</li>
-                    </ul>
-                    
-                    <div class="section-cta">
-                        <a href="tel:05315595483" class="section-btn phone"><i class="fas fa-phone-alt"></i> Kurumsal İletişim</a>
-                        <a href="https://wa.me/905315595483?text=Merhaba,%20kurumsal%20nakliye%20hizmeti%20almak%20istiyorum." class="section-btn whatsapp"><i class="fab fa-whatsapp"></i> Kurumsal Teklif Al</a>
-                    </div>
+                    <h2>Nakliye Firmaları</h2>
+                    <p><strong>Nakliye firmaları</strong> arasında Mercan Nakliye, yılların getirdiği tecrübe ve referanslarıyla öne çıkar. Sektörde lider nakliye firmaları arasında yer alarak bireysel ve kurumsal müşterilere güvenilir taşımacılık sunuyoruz. Nakliye firmaları denildiğinde akla gelen ilk adreslerdeniz. Müşteri memnuniyeti odaklı çalışma prensibimiz ve şeffaf fiyat politikamızla rakiplerimizden ayrılıyoruz.</p>
+                    <div class="feature-grid"><div class="feature-card"><h4>Kurumsal Çözümler</h4><p>Ofis, fabrika ve kurumsal taşımacılık.</p></div><div class="feature-card"><h4>Referanslarımız</h4><p>Binlerce mutlu müşteri ve iş ortağı.</p></div></div>
                 </section>
                 
-                <!-- NAKLİYATÇI NUMARASI -->
-                <section class="content-section" id="nakliyatci-numarasi">
-                    <h2>Nakliyatçı Numarası ve İletişim</h2>
-                    <p><strong>Nakliyatçı numarası</strong> arayışınız Mercan Nakliye ile son bulsun. Türkiye geneli nakliye hizmetlerimiz için hemen bize ulaşın. Müşteri temsilcilerimiz size en uygun çözümü sunmak için hazır bekliyor.</p>
-                    
-                    <div class="highlight-box">
-                        <h4><i class="fas fa-phone-volume"></i> Hemen Arayın!</h4>
-                        <p><strong>Ana İletişim Numaramız:</strong> 0531 559 54 83</p>
-                        <p><strong>WhatsApp Hattı:</strong> 0531 559 54 83</p>
-                        <p><strong>Çalışma Saatleri:</strong> Haftanın 7 günü, 08:00 - 24:00</p>
-                        <p><strong>Acil Nakliye:</strong> 7/24 acil nakliye hattı</p>
-                        <p><strong>E-posta:</strong> info@mercannakliye.com</p>
-                    </div>
-                    
-                    <p>İstanbul, Ankara, İzmir başta olmak üzere Türkiye'nin tüm illerine hizmet veriyoruz. Özellikle büyük şehirlerde günlük seferlerimiz bulunmaktadır. Hizmet bölgelerimiz hakkında detaylı bilgi almak için bizi arayabilirsiniz.</p>
-                    
-                    <div class="section-cta">
-                        <a href="tel:05315595483" class="section-btn phone"><i class="fas fa-phone-alt"></i> Hemen Ara</a>
-                        <a href="https://wa.me/905315595483?text=Merhaba,%20nakliyat%20hakkında%20bilgi%20almak%20istiyorum." class="section-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp'tan Yaz</a>
-                    </div>
+                <!-- H3: Nakliyat Fiyatları -->
+                <section class="content-section">
+                    <h3>Nakliyat Fiyatları</h3>
+                    <p><strong>Nakliyat fiyatları</strong> taşınacak eşya hacmi, mesafe, kat durumu, özel eşya varlığı gibi parametrelere göre hesaplanır. Mercan Nakliye olarak en uygun nakliyat fiyatları ile rakiplerimizden daha avantajlı teklifler sunuyoruz. Fiyat teklifi almak için bizi arayabilir veya WhatsApp hattımızdan eşya listenizi iletebilirsiniz.</p>
+                </section>
+                
+                <!-- H3: Nakliye Ücretleri -->
+                <section class="content-section">
+                    <h3>Nakliye Ücretleri</h3>
+                    <p><strong>Nakliye ücretleri</strong> konusunda şeffafız; hiçbir gizli maliyet yoktur. Parsiyel, komple veya tır nakliye ücretleri farklılık gösterir. Güncel nakliye ücretleri için hızlı keşif ekibimizle görüşün, bütçenize en uygun seçeneği belirleyelim.</p>
+                </section>
+                
+                <!-- H2: Nakliyeciler -->
+                <section class="content-section" id="nakliyeciler">
+                    <h2>Nakliyeciler</h2>
+                    <p>Güvenilir <strong>nakliyeciler</strong> arasında yer alan Mercan Nakliye, eğitimli ve sigortalı personeliyle öne çıkar. Nakliyeciler sektöründe 20 yılı aşkın süredir hizmet veriyoruz. En yakın nakliyeciler içinde 7/24 ulaşabileceğiniz profesyonel ekip arkadaşlarımızla işinizi hızlıca çözüme kavuşturuyoruz. Acil taşıma ihtiyaçlarınızda bölgenizdeki en hızlı nakliyecilerden biriyiz.</p>
+                </section>
+                
+                <!-- H2: Tır Nakliye Ücretleri -->
+                <section class="content-section" id="tir-nakliye-ucretleri">
+                    <h2>Tır Nakliye Ücretleri</h2>
+                    <p><strong>Tır nakliye ücretleri</strong> büyük hacimli eşya, endüstriyel ürün veya kurumsal stok taşımalarında ekonomik çözüm sunar. Tır nakliye ücretleri güzergah, yakıt, tonaj ve sigorta durumuna göre belirlenir. Mercan Nakliye olarak filomuzdaki modern tırlarla şehirler arası ve bölgesel taşımalarda en cazip tır nakliye ücretlerini sağlıyoruz.</p>
+                </section>
+                
+                <!-- H2: Tır Nakliyat Fiyatları -->
+                <section class="content-section" id="tir-nakliyat-fiyatlari">
+                    <h2>Tır Nakliyat Fiyatları</h2>
+                    <p><strong>Tır nakliyat fiyatları</strong> rekabetçi ve esnektir. Tam dolu tır veya parsiyel tır seçenekleriyle bütçenize uygun alternatifler sunuyoruz. Tır nakliyat fiyatları için anlık fiyat teklifi alın, sektördeki en uygun tır nakliyat fiyatlarıyla taşımacılık yapın. Yükünüz ne olursa olsun, sigortalı tır nakliyat fiyatları için Mercan Nakliye’yi tercih edin.</p>
+                </section>
+                
+                <!-- H2: Sigortalı Nakliye Hizmeti -->
+                <section class="content-section" id="sigortali-nakliye">
+                    <h2>Sigortalı Nakliye Hizmeti</h2>
+                    <p><strong>Sigortalı nakliye hizmeti</strong> ile eşyalarınızı güvence altına alıyoruz. Tüm taşımalarımızda sigortalı nakliye hizmeti standarttır. Olası hasar veya kayıplara karşı sigorta teminatı sağlıyoruz. Sigortalı nakliye hizmeti sayesinde müşterilerimiz gönül rahatlığıyla taşınır. Mercan Nakliye farkıyla sigortalı nakliye hizmeti alanında lider konumdayız.</p>
+                    <div class="highlight-box"><h4><i class="fas fa-shield-alt"></i> Güvenceniz Sigortalı Taşıma</h4><p>Değerli eşyalarınız A+ sigorta poliçesi ile korunmaktadır.</p></div>
+                    <div class="section-cta"><a href="tel:05315595483" class="section-btn phone"><i class="fas fa-phone-alt"></i> Sigortalı Nakliye İçin Ara</a></div>
                 </section>
             </article>
             
-            <!-- SAĞ SÜTUN - SIDEBAR -->
+            <!-- SAĞ SİDEBAR -->
             <aside class="sidebar">
-                <!-- HIZLI İLETİŞİM -->
                 <div class="sidebar-widget quick-contact">
-                    <h3 class="widget-title"><i class="fas fa-headset"></i> Hızlı Nakliye Talebi</h3>
-                    <p style="margin-bottom: 20px; opacity: 0.9;">Ücretsiz keşif ve fiyat teklifi için hemen arayın.</p>
-                    <a href="https://wa.me/905315595483?text=Merhaba,%20nakliye%20işim%20var.%20Fiyat%20teklifi%20almak%20istiyorum." class="contact-sidebar-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp'tan Yaz</a>
+                    <h3 class="widget-title"><i class="fas fa-headset"></i> Hızlı Teklif</h3>
+                    <a href="https://wa.me/905315595483" class="contact-sidebar-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
                     <a href="tel:05315595483" class="contact-sidebar-btn phone"><i class="fas fa-phone-alt"></i> 0531 559 54 83</a>
-                    <p style="margin-top: 15px; font-size: 0.9rem; opacity: 0.8;">7/24 Acil Nakliye Hattı</p>
                 </div>
-                
-                <!-- ANAHTAR KELİMELER -->
                 <div class="sidebar-widget">
-                    <h3 class="widget-title"><i class="fas fa-search"></i> Nakliye İle İlgili Aramalar</h3>
+                    <h3 class="widget-title"><i class="fas fa-search"></i> Hizmetlerimiz</h3>
                     <ul class="keyword-list">
-                        <li><a href="#sehirler-arasi"><i class="fas fa-chevron-right"></i> şehirler arası nakliyat</a></li>
-                        <li><a href="#nakliyat-fiyatlari"><i class="fas fa-chevron-right"></i> nakliyat fiyatları</a></li>
-                        <li><a href="#en-yakin-nakliyeci"><i class="fas fa-chevron-right"></i> en yakın nakliyeci</a></li>
-                        <li><a href="#evden-eve-nakliyat"><i class="fas fa-chevron-right"></i> evden eve nakliyat</a></li>
-                        <li><a href="#nakliye-firmalari"><i class="fas fa-chevron-right"></i> nakliye firmaları</a></li>
-                        <li><a href="#nakliyatci-numarasi"><i class="fas fa-chevron-right"></i> nakliyatçı numarası</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> ucuz nakliyat</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> ofis taşıma</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> parsiyel nakliye</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> eşya taşıma fiyatları</a></li>
+                        <li><a href="#sehirler-arasi-nakliyat"><i class="fas fa-chevron-right"></i> Şehirler Arası Nakliyat</a></li>
+                        <li><a href="#nakliye-firmalari"><i class="fas fa-chevron-right"></i> Nakliye Firmaları</a></li>
+                        <li><a href="#nakliyeciler"><i class="fas fa-chevron-right"></i> Nakliyeciler</a></li>
+                        <li><a href="#tir-nakliye-ucretleri"><i class="fas fa-chevron-right"></i> Tır Nakliye Ücretleri</a></li>
+                        <li><a href="#tir-nakliyat-fiyatlari"><i class="fas fa-chevron-right"></i> Tır Nakliyat Fiyatları</a></li>
+                        <li><a href="#sigortali-nakliye"><i class="fas fa-chevron-right"></i> Sigortalı Nakliye</a></li>
                     </ul>
                 </div>
-                
-                <!-- SIK SORULAN SORULAR -->
                 <div class="sidebar-widget faq-sidebar">
-                    <h3 class="widget-title"><i class="fas fa-question-circle"></i> Sık Sorulan Sorular</h3>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <span>Nakliyat fiyatı nasıl belirlenir?</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Fiyat; taşınacak eşya miktarı, mesafe, kat sayısı, özel eşya varlığı, park sorunu ve taşıma tarihine göre belirlenir. Ücretsiz keşif ile en doğru fiyatı alabilirsiniz.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <span>Eşyalarım sigortalı mı?</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Evet, tüm eşyalarınız nakliye sigortamız kapsamındadır. Taşıma sırasında oluşabilecek hasarlar sigorta tarafından karşılanır.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <span>Taşıma ne kadar sürer?</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Mesafeye göre değişir. Örneğin İstanbul-Ankara arası ortalama 1 gün sürer. Büyük şehirler arası taşımalar 1-2 gün içinde tamamlanır.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <span>Kırılacak eşyalar nasıl taşınır?</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Kırılacak eşyalar özel ambalaj malzemeleri (köpük, strafor, bubble wrap) ile paketlenir, özel bölmelerde taşınır.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <span>Hafta sonu ve tatillerde hizmet veriyor musunuz?</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Evet, haftanın 7 günü, resmi tatiller dahil 08:00-24:00 saatleri arasında hizmet veriyoruz. Acil nakliye için 7/24 hizmetimiz mevcuttur.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <span>Ödemeyi ne zaman yapmalıyım?</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Ödeme, eşyalarınız yeni adresinize teslim edilip yerleştirildikten sonra yapılır. Peşin veya kredi kartı ile ödeme seçeneklerimiz mevcuttur.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <span>Parsiyel nakliye nedir?</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Parsiyel nakliye, tam yük dolmayacak miktardaki eşyaların başka yüklerle birlikte taşınmasıdır. Bu yöntemle nakliye maliyetleri düşer.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <span>Eşyalarımı nasıl takip edebilirim?</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>GPS sistemi ile eşyalarınızı anlık takip edebilirsiniz. Ayrıca müşteri temsilcimiz size düzenli bilgi verir.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <span>Taşıma öncesi neler yapmalıyım?</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Değerli eşyalarınızı (mücevher, nakit, önemli belgeler) yanınıza alın. Eşyalarınızı kategorilere ayırın ve taşınmayacak eşyaları ayırın.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <span>Montaj gerektiren eşyalar için hizmetiniz var mı?</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Evet, yatak, dolap, kitaplık gibi montaj gerektiren eşyalarınızı söküp yeni adresinizde kuruyoruz.</p>
-                        </div>
-                    </div>
+                    <h3 class="widget-title"><i class="fas fa-question-circle"></i> Sık Sorulanlar</h3>
+                    <div class="faq-item"><div class="faq-question"><span>Tır nakliye ücretleri ne kadar?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><p>Güzergah ve yük miktarına göre değişir, ücretsiz teklif alın.</p></div></div>
+                    <div class="faq-item"><div class="faq-question"><span>Sigortalı nakliye zorunlu mu?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><p>Tüm taşımalarımızda sigorta poliçesi mevcuttur.</p></div></div>
+                    <div class="faq-item"><div class="faq-question"><span>En yakın nakliyeci ne kadar sürede gelir?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><p>Acil durumlarda 1-2 saat içinde ekibimiz adresinizde.</p></div></div>
                 </div>
             </aside>
         </div>
     </main>
 
-    <!-- CTA SECTION -->
     <section class="cta-section">
-        <h2>Nakliye İşleminiz İçin Hemen Teklif Alın!</h2>
-        <p>Mercan Nakliye'nin tecrübeli ekibiyle eşyalarınız güvende. Ücretsiz keşif ve en uygun fiyat garantisi.</p>
-        <div class="cta-buttons">
-            <a href="tel:05315595483" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Hemen Ara: 0531 559 54 83</a>
-            <a href="https://wa.me/905315595483?text=Merhaba,%20nakliye%20işim%20var.%20Fiyat%20teklifi%20almak%20istiyorum." class="btn btn-secondary"><i class="fab fa-whatsapp"></i> WhatsApp'tan Fiyat Teklifi Al</a>
-        </div>
+        <h2>Anında Nakliye Teklifi Alın</h2>
+        <p>Tır nakliye ücretleri, şehirler arası nakliyat ve sigortalı taşıma için bize ulaşın.</p>
+        <div class="cta-buttons"><a href="tel:05315595483" class="btn btn-primary"><i class="fas fa-phone-alt"></i> 0531 559 54 83</a><a href="https://wa.me/905315595483" class="btn btn-secondary"><i class="fab fa-whatsapp"></i> WhatsApp</a></div>
     </section>
 
-    <!-- OTOMATİK SOHBET BALONU -->
-    <div class="chat-bubble" id="chatBubble">
-        <div class="chat-content">
-            <button class="chat-close" id="chatClose">
-                <i class="fas fa-times"></i>
-            </button>
-            <div class="chat-header">
-                <div class="chat-avatar">
-                    <i class="fas fa-truck"></i>
-                </div>
-                <div class="chat-text">
-                    <h4>Mercan Nakliye</h4>
-                    <p>Nakliye aracımız şuan müsait. Fiyat teklifi için hemen arayın!</p>
-                </div>
-            </div>
-            <a href="tel:05315595483" class="chat-call-btn">
-                <i class="fas fa-phone-alt"></i> 0531 559 54 83
-            </a>
-        </div>
-    </div>
+    <div class="chat-bubble" id="chatBubble"><div class="chat-content"><button class="chat-close" id="chatClose"><i class="fas fa-times"></i></button><div class="chat-header"><div class="chat-avatar"><i class="fas fa-truck"></i></div><div class="chat-text"><h4>Mercan Nakliye</h4><p>Sigortalı & uygun fiyat için hemen arayın.</p></div></div><a href="tel:05315595483" class="chat-call-btn"><i class="fas fa-phone-alt"></i> 0531 559 54 83</a></div></div>
+    <div class="floating-cta"><a href="https://wa.me/905315595483" class="floating-btn floating-whatsapp"><i class="fab fa-whatsapp"></i></a><a href="tel:05315595483" class="floating-btn floating-phone"><i class="fas fa-phone-alt"></i></a></div>
 
-    <!-- FLOATING CTA -->
-    <div class="floating-cta">
-        <a href="https://wa.me/905315595483?text=Merhaba,%20nakliye%20işim%20var.%20Fiyat%20teklifi%20almak%20istiyorum." class="floating-btn floating-whatsapp">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-        <a href="tel:05315595483" class="floating-btn floating-phone">
-            <i class="fas fa-phone-alt"></i>
-        </a>
-    </div>
-
-    <!-- FOOTER -->
-    <footer>
+     <footer>
         <div class="footer-content">
             <div class="footer-logo">
                 <i class="fas fa-truck"></i> Mercan Nakliye
@@ -1611,149 +992,31 @@
             </div>
             
             <div class="footer-links">
-                <a href="#sehirler-arasi">Şehirler Arası Nakliyat</a>
-                <a href="#nakliyat-fiyatlari">Nakliyat Fiyatları</a>
-                <a href="#en-yakin-nakliyeci">En Yakın Nakliyeci</a>
-                <a href="#evden-eve-nakliyat">Evden Eve Nakliyat</a>
+                <a href="#sehirler-arasi-nakliyat">Şehirler Arası Nakliyat</a>
                 <a href="#nakliye-firmalari">Nakliye Firmaları</a>
-                <a href="#nakliyatci-numarasi">Nakliyatçı Numarası</a>
+                <a href="#tir-nakliye-ucretleri">Tır Nakliye Ücretleri</a>
+                <a href="#sigortali-nakliye">Sigortalı Nakliye Hizmeti</a>
             </div>
             
             <div class="copyright">
-                © 2025 Mercan Nakliye. Tüm hakları saklıdır. | Türkiye Geneli Nakliyat Hizmetleri
+                © 2025 Mercan Nakliye | Profesyonel Nakliye & Tır Nakliyat Fiyatları
             </div>
         </div>
     </footer>
 
     <script>
-    // Hamburger Menü JavaScript
-    document.addEventListener('DOMContentLoaded', function() {
-        const menuToggle = document.getElementById('menuToggle');
-        const sidebarMenu = document.getElementById('sidebarMenu');
-        const sidebarClose = document.getElementById('sidebarClose');
-        const sidebarOverlay = document.getElementById('sidebarOverlay');
-        
-        // Menü aç
-        if (menuToggle) {
-            menuToggle.addEventListener('click', function() {
-                this.classList.toggle('active');
-                sidebarMenu.classList.toggle('active');
-                sidebarOverlay.classList.toggle('active');
-                document.body.style.overflow = 'hidden';
-            });
-        }
-        
-        // Menü kapat
-        function closeMenu() {
-            if (menuToggle) menuToggle.classList.remove('active');
-            if (sidebarMenu) sidebarMenu.classList.remove('active');
-            if (sidebarOverlay) sidebarOverlay.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-        
-        if (sidebarClose) {
-            sidebarClose.addEventListener('click', closeMenu);
-        }
-        
-        if (sidebarOverlay) {
-            sidebarOverlay.addEventListener('click', closeMenu);
-        }
-        
-        // Menü linklerine tıklayınca menüyü kapat
-        const sidebarLinks = document.querySelectorAll('.sidebar-links a');
-        sidebarLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                // Sadece submenu dışındaki linkler menüyü kapatsın
-                if (!this.parentElement.classList.contains('submenu')) {
-                    closeMenu();
-                }
-            });
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menuToggle'), sidebarMenu = document.getElementById('sidebarMenu'), sidebarClose = document.getElementById('sidebarClose'), overlay = document.getElementById('sidebarOverlay');
+            function closeMenu() { menuToggle?.classList.remove('active'); sidebarMenu?.classList.remove('active'); overlay?.classList.remove('active'); document.body.style.overflow = ''; }
+            menuToggle?.addEventListener('click', () => { menuToggle.classList.toggle('active'); sidebarMenu.classList.toggle('active'); overlay.classList.toggle('active'); document.body.style.overflow = 'hidden'; });
+            sidebarClose?.addEventListener('click', closeMenu); overlay?.addEventListener('click', closeMenu);
+            document.querySelectorAll('.sidebar-links a').forEach(link => link.addEventListener('click', closeMenu));
+            document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+            const chatBubble = document.getElementById('chatBubble'), chatClose = document.getElementById('chatClose');
+            setTimeout(() => chatBubble?.classList.add('active'), 4000);
+            chatClose?.addEventListener('click', () => chatBubble?.classList.remove('active'));
+            document.querySelectorAll('.faq-question').forEach(q => { q.addEventListener('click', function() { this.parentElement.classList.toggle('active'); }); });
         });
-        
-        // ESC tuşu ile menüyü kapat
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                closeMenu();
-            }
-        });
-        
-        // OTOMATİK SOHBET BALONU - 4 saniye sonra aç
-        const chatBubble = document.getElementById('chatBubble');
-        const chatClose = document.getElementById('chatClose');
-        
-        setTimeout(() => {
-            if (chatBubble) {
-                chatBubble.classList.add('active');
-            }
-        }, 4000);
-        
-        // Sohbet balonunu kapat
-        if (chatClose) {
-            chatClose.addEventListener('click', function() {
-                if (chatBubble) {
-                    chatBubble.classList.remove('active');
-                }
-            });
-        }
-        
-        // 30 saniye sonra balonu otomatik kapat
-        setTimeout(() => {
-            if (chatBubble && chatBubble.classList.contains('active')) {
-                chatBubble.classList.remove('active');
-            }
-        }, 30000);
-    });
-
-    // FAQ Toggle
-    document.querySelectorAll('.faq-question').forEach(question => {
-        question.addEventListener('click', () => {
-            const item = question.parentElement;
-            item.classList.toggle('active');
-        });
-    });
-
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            const targetId = this.getAttribute('href');
-            if(targetId === '#') return;
-            
-            const targetElement = document.querySelector(targetId);
-            if(targetElement) {
-                e.preventDefault();
-                window.scrollTo({
-                    top: targetElement.offsetTop - 100,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-
-    // Add active class to current section in viewport
-    const sections = document.querySelectorAll('.content-section');
-    const observerOptions = {
-        threshold: 0.3,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-            }
-        });
-    }, observerOptions);
-
-    sections.forEach(section => {
-        observer.observe(section);
-    });
-    
-    // Telefon numarası tıklama analizi
-    document.querySelectorAll('a[href^="tel:"]').forEach(phoneLink => {
-        phoneLink.addEventListener('click', function() {
-            console.log('Telefon arandı: ' + this.getAttribute('href'));
-        });
-    });
     </script>
 </body>
 </html>
